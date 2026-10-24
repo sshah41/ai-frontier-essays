@@ -113,7 +113,7 @@ article ul{margin:0 0 18px;padding-left:20px}
 article li{font-size:17px;margin-bottom:8px}
 article a{color:var(--link)}
 .next{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:18px;align-items:center;background:var(--paper);border:1px solid var(--rule);border-radius:14px;padding:14px;margin-top:36px;text-decoration:none;color:inherit}
-.next img{width:100%;height:auto;border-radius:8px;display:block}
+.next img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;display:block}
 .next .eyebrow{margin-bottom:4px}
 .next strong{font-family:var(--f-display);font-size:22px;display:block;line-height:1.15}
 .next span{color:var(--ink-2);font-size:14.5px}
@@ -296,7 +296,7 @@ const el=(tag,a,p)=>{const e=document.createElementNS(NS,tag);for(const k in a)e
 const svg1=$("c1");let L={},dots=[],lines={},thrG,endG,yearTxt;
 const rad=m=>m.p?2+1.7*Math.cbrt(m.p):2.2;
 function layout(){
-  const W=$("box1").clientWidth||900,narrow=W<560,H=Math.round(Math.max(320,Math.min(500,W*.54)));
+  const W=$("box1").clientWidth||900,narrow=W<560,H=Math.round(Math.max(260,Math.min(380,W*.38,(window.innerHeight||800)*.40)));
   const m={l:28,r:narrow?92:150,t:12,b:26};
   L={W,H,m,narrow,k:narrow?.62:1,x:d=>m.l+(d/XMAX)*(W-m.l-m.r),y:v=>m.t+(1-v/62)*(H-m.t-m.b)};
   svg1.setAttribute("viewBox",`0 0 ${W} ${H}`);svg1.innerHTML="";
@@ -394,11 +394,11 @@ svg1.addEventListener("pointerleave",()=>tip.style.opacity=0);
 
 function toast(msg){const e=$("toast");e.textContent=msg;e.style.opacity=1;clearTimeout(toast.h);toast.h=setTimeout(()=>e.style.opacity=0,2600)}
 let downloads=null;const GIF="the-shrinking-frontier.gif";
-$("gif").onclick=async()=>{if(!downloads){toast("Downloads aren't available in this view");return}
+$("gif").onclick=async()=>{if(!downloads){const a=document.createElement("a");a.href="gif/"+GIF;a.download=GIF;document.body.appendChild(a);a.click();a.remove();toast("GIF downloading");return}
   try{$("gif").disabled=true;const res=await fetch("gif/"+GIF);if(!res.ok)throw new Error("fetch");await downloads.save({filename:GIF,data:await res.blob()});toast("GIF saved")}
   catch(e){const c=e&&e.code;if(c==="declined"){}else if(c==="rate_limited")toast("A download prompt is already open");else toast("Couldn't download the GIF here")}finally{$("gif").disabled=false}};
 (async()=>{try{downloads=window.claude&&window.claude.use?await window.claude.use("downloads"):null}catch(e){downloads=null}
-  if(!downloads){$("gif").hidden=true;$("gifnote").textContent="GIF downloads open in claude.ai"}})();
+  })();
 if(NEXT_URL)$("nextlink").href=NEXT_URL;else $("nextlink").removeAttribute("href");
 
 window.__cap={timeline(m,fps){mode=m;const out=[];t=0;hold=0;const dt=1/fps;out.push(0);let g=0;while(t<END&&g++<5000){advance(dt);out.push(t)}for(let i=0;i<fps*3.5;i++)out.push(END);return out},set(m,tt){mode=m;t=tt;render()}};
