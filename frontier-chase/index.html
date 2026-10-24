@@ -1,0 +1,447 @@
+<!doctype html><html><head><meta charset=utf8>
+<meta name="description" content="Every model Artificial Analysis has scored, replayed in release order. The US has led throughout, but China is now 2.5 points behind.">
+<link rel="canonical" href="https://nabeel-shah-ml.github.io/articles/frontier-chase/">
+<meta property="og:type" content="article"><meta property="og:title" content="The Frontier Chase"><meta property="og:description" content="Every model Artificial Analysis has scored, replayed in release order. The US has led throughout, but China is now 2.5 points behind."><meta property="og:url" content="https://nabeel-shah-ml.github.io/articles/frontier-chase/"><meta property="og:image" content="https://nabeel-shah-ml.github.io/articles/frontier-chase/plate-1.jpg"><meta property="og:image:width" content="2000"><meta property="og:image:height" content="1125"><meta property="article:author" content="Nabeel"><meta property="article:published_time" content="2026-10-23">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="The Frontier Chase"><meta name="twitter:description" content="Every model Artificial Analysis has scored, replayed in release order. The US has led throughout, but China is now 2.5 points behind."><meta name="twitter:image" content="https://nabeel-shah-ml.github.io/articles/frontier-chase/plate-1.jpg">
+<meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>The Frontier Chase</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Layout: a dark screening "stage" holds the animation (one fixed look, like a projection screen); the article sits below in a reading column that follows the viewer's theme. */
+:root{
+  --bg:#f3f5f8; --paper:#ffffff; --ink:#0f1620; --ink-2:#465061; --ink-3:#778194; --rule:#dfe3ea;
+  --link:#2a67c9; --accent-b:#2a78d6; --accent-o:#e0602c;
+  --st-bg:#0c1118; --st-panel:#121923; --st-ink:#eef1f6; --st-ink-2:#aab3c2; --st-ink-3:#6f7a8c; --st-rule:#232c39; --st-grid:#1a2230;
+  --s1:#3d8bea; --s2:#e2622f; --s3:#22a676; --band:rgba(61,139,234,.13);
+  --f-display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --f-serif:"Instrument Serif","Iowan Old Style",Georgia,serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0a0d12;--paper:#11161e;--ink:#eceff4;--ink-2:#b3bbc8;--ink-3:#7f8899;--rule:#232a35;--link:#6ea8f5;--accent-b:#3987e5;--accent-o:#d95926;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a0d12;--paper:#11161e;--ink:#eceff4;--ink-2:#b3bbc8;--ink-3:#7f8899;--rule:#232a35;--link:#6ea8f5;--accent-b:#3987e5;--accent-o:#d95926;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px;display:flex;flex-direction:column;gap:28px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.hero{display:flex;flex-direction:column;gap:10px;max-width:820px}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(34px,7vw,64px);line-height:1;margin:0;letter-spacing:-.025em;text-wrap:balance}
+.dek{font-size:18px;color:var(--ink-2);margin:0;max-width:62ch}
+
+/* stage */
+.stage{background:var(--st-bg);color:var(--st-ink);border-radius:16px;padding:18px clamp(12px,2.4vw,24px) 14px;display:flex;flex-direction:column;gap:12px;box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 18px 40px -24px rgba(0,0,0,.5);min-width:0}
+.stbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.tabs{display:inline-flex;background:var(--st-panel);border:1px solid var(--st-rule);border-radius:999px;padding:3px}
+.tabs button{all:unset;cursor:pointer;font-size:13.5px;font-weight:500;padding:7px 14px;border-radius:999px;color:var(--st-ink-2)}
+.tabs button[aria-pressed="true"]{background:var(--st-ink);color:var(--st-bg)}
+.gifbtn{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--st-ink);border:1px solid var(--st-rule);border-radius:999px;padding:7px 13px;background:var(--st-panel)}
+.gifbtn:hover{border-color:var(--st-ink-3)}
+.gifbtn svg{width:15px;height:15px}
+.gifnote{font-size:12px;color:var(--st-ink-3)}
+.readout{display:grid;grid-template-columns:1.1fr 1.6fr 1.6fr 1fr;gap:1px;background:var(--st-rule);border-radius:10px;overflow:hidden}
+.cell{background:var(--st-panel);padding:9px 12px;min-width:0;display:flex;flex-direction:column;gap:1px}
+.k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--st-ink-3)}
+.v{font-family:var(--f-display);font-weight:700;font-size:24px;line-height:1.15;font-variant-numeric:tabular-nums;white-space:nowrap}
+.s{font-size:12.5px;color:var(--st-ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sw{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.cell.gap .v{transition:color .3s}
+.cell.gap.final .v{color:var(--s2)}
+@media (max-width:680px){.readout{grid-template-columns:1fr 1fr}.v{font-size:21px}}
+.chart{position:relative;min-width:0}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--f-mono);font-size:11px;fill:var(--st-ink-3)}
+.grid line{stroke:var(--st-grid)}
+.endlbl{font-family:var(--f-body)!important;font-size:12.5px!important;font-weight:600;fill:var(--st-ink)!important}
+.endval{font-size:12px!important;fill:var(--st-ink-2)!important}
+.gaplbl{font-family:var(--f-display)!important;font-weight:800;fill:var(--st-ink)!important;paint-order:stroke;stroke:var(--st-bg);stroke-width:6px;stroke-linejoin:round}
+.yearbig{font-family:var(--f-display)!important;font-weight:800;fill:var(--st-ink)!important;opacity:.085}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;color:var(--st-ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:16px;height:2.5px;border-radius:2px;display:inline-block}
+.cap{display:flex;gap:12px;align-items:baseline;min-height:3.3em;border-top:1px solid var(--st-rule);padding-top:10px}
+.cap .cd{font-family:var(--f-mono);font-size:11.5px;color:var(--st-ink-3);white-space:nowrap}
+.cap p{margin:0;font-size:15.5px;line-height:1.45;color:var(--st-ink)}
+.player{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.pbtn{all:unset;cursor:pointer;width:40px;height:40px;border-radius:50%;background:var(--st-ink);color:var(--st-bg);display:grid;place-items:center;flex:none}
+.pbtn svg{width:16px;height:16px}
+.track{position:relative;flex:1 1 240px;min-width:0;height:40px}
+.track input{position:absolute;inset:0;width:100%;margin:0;opacity:0;cursor:pointer}
+.rail{position:absolute;left:0;right:0;top:19px;height:3px;border-radius:3px;background:var(--st-rule)}
+.fill{position:absolute;left:0;top:19px;height:3px;border-radius:3px;background:var(--st-ink-2)}
+.knob{position:absolute;top:13px;width:15px;height:15px;margin-left:-7.5px;border-radius:50%;background:var(--st-ink);box-shadow:0 0 0 4px rgba(238,241,246,.12)}
+.beat{position:absolute;top:15px;width:2px;height:11px;margin-left:-1px;background:var(--st-ink-3);border-radius:1px;pointer-events:none}
+.beat.on{background:var(--s2)}
+.track input:focus-visible ~ .knob{outline:2px solid var(--s1);outline-offset:3px}
+.tlbl{font-family:var(--f-mono);font-size:12px;color:var(--st-ink-3);min-width:64px;text-align:right}
+.speed{display:inline-flex;gap:2px}
+.speed button{all:unset;cursor:pointer;font-family:var(--f-mono);font-size:12px;padding:5px 7px;border-radius:6px;color:var(--st-ink-3)}
+.speed button[aria-pressed="true"]{color:var(--st-ink);background:var(--st-panel)}
+.stage button:focus-visible{outline:2px solid var(--s1);outline-offset:2px}
+.tip{position:absolute;pointer-events:none;background:var(--st-ink);color:var(--st-bg);font-size:12.5px;line-height:1.35;padding:8px 10px;border-radius:8px;max-width:240px;transform:translate(-50%,calc(-100% - 12px));opacity:0;transition:opacity .12s;z-index:3}
+.tip strong{display:block;font-weight:600}
+.srcline{font-size:11.5px;color:var(--st-ink-3);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* article */
+article{display:grid;grid-template-columns:minmax(0,1fr);gap:0;justify-items:center}
+.col{width:100%;max-width:680px}
+.cover{width:100%;max-width:1120px;margin:8px 0 28px}
+.cover img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--rule)}
+.cover figcaption{font-size:13px;color:var(--ink-3);margin-top:8px}
+article h2{font-family:var(--f-display);font-weight:700;font-size:clamp(24px,3.4vw,30px);line-height:1.15;margin:44px 0 12px;letter-spacing:-.01em;text-wrap:balance}
+article p{margin:0 0 16px;font-size:17.5px;line-height:1.68}
+article p.lede{font-size:21px;line-height:1.55;color:var(--ink)}
+article p.lede::first-letter{font-family:var(--f-serif);font-size:3.4em;float:left;line-height:.85;padding:6px 10px 0 0}
+.pull{font-family:var(--f-serif);font-size:clamp(28px,4.4vw,40px);line-height:1.15;margin:28px 0 30px;padding-left:18px;border-left:3px solid var(--accent-o);color:var(--ink)}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden;margin:8px 0 24px}
+.facts div{background:var(--paper);padding:14px;min-width:0}
+.facts b{display:block;font-family:var(--f-display);font-size:28px;line-height:1.1;font-variant-numeric:tabular-nums}
+.facts span{font-size:13.5px;color:var(--ink-2);line-height:1.4;display:block;margin-top:4px}
+@media (max-width:600px){.facts{grid-template-columns:1fr}}
+.fig{width:100%;max-width:820px;background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:14px 14px 10px;margin:10px 0 26px}
+.fig h3{font-family:var(--f-display);font-size:16px;margin:0 0 2px}
+.fig .sub{font-size:13.5px;color:var(--ink-2);margin:0 0 8px}
+.fig svg{display:block;width:100%;height:auto;overflow:visible}
+.fig svg text{font-family:var(--f-mono);font-size:11px;fill:var(--ink-3)}
+.fig .grid line{stroke:var(--rule)}
+.halo{paint-order:stroke;stroke:var(--paper);stroke-width:4px;stroke-linejoin:round}
+article ul{margin:0 0 18px;padding-left:20px}
+article li{font-size:17px;margin-bottom:8px}
+article a{color:var(--link)}
+.next{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:18px;align-items:center;background:var(--paper);border:1px solid var(--rule);border-radius:14px;padding:14px;margin-top:36px;text-decoration:none;color:inherit}
+.next img{width:100%;border-radius:8px;display:block}
+.next .eyebrow{margin-bottom:4px}
+.next strong{font-family:var(--f-display);font-size:22px;display:block;line-height:1.15}
+.next span{color:var(--ink-2);font-size:14.5px}
+@media (max-width:560px){.next{grid-template-columns:minmax(0,1fr)}}
+details{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:10px 14px;width:100%;max-width:820px;margin-top:28px}
+summary{cursor:pointer;font-weight:600}
+.tbl{overflow-x:auto;margin-top:10px}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);white-space:nowrap}
+th{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3);font-weight:500}
+td.n{text-align:right;font-family:var(--f-mono)}
+.sources{font-size:14px;color:var(--ink-2)}
+.sources li{font-size:14px}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 14px;border-radius:999px;font-size:13.5px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}
+@media (prefers-reduced-motion: reduce){.tip,.toast,.cell.gap .v{transition:none}}
+body.capture .wrap{padding:0;max-width:none}
+body.capture .hero,body.capture article,body.capture .stbar,body.capture .player{display:none!important}
+body.capture .sttitle{display:flex}
+.sttitle{display:none;justify-content:space-between;align-items:baseline;gap:12px}
+.sttitle b{font-family:var(--f-display);font-weight:800;font-size:24px;letter-spacing:-.01em}
+.sttitle span{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--st-ink-3)}
+body.capture .stage{border-radius:0;box-shadow:none}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Artificial Analysis Intelligence Index v4.3.2 · Jan 2023 – 23 Oct 2026</div>
+    <h1>The Frontier Chase</h1>
+    <p class="dek">Every model Artificial Analysis has scored, replayed in release order. The United States has led the whole way. As of today, China is 2.5 points behind.</p>
+  </header>
+
+  <section class="stage" id="stage" aria-label="Animated chart">
+    <div class="sttitle" aria-hidden="true"><b>The Frontier Chase</b><span id="stmode">US vs China · Intelligence Index v4.3.2</span></div>
+    <div class="stbar">
+      <div class="tabs" role="group" aria-label="Race">
+        <button type="button" id="mCty" aria-pressed="true">US vs China</button>
+        <button type="button" id="mLic" aria-pressed="false">Open vs closed</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <span class="gifnote" id="gifnote">Downloads this race</span>
+        <button class="gifbtn" type="button" id="gif"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8M4.5 6.5 8 10l3.5-3.5M2.5 13.5h11"/></svg>Download GIF</button>
+      </div>
+    </div>
+    <div class="readout" aria-live="off">
+      <div class="cell"><span class="k">Date</span><span class="v" id="rDate">—</span><span class="s" id="rCount">—</span></div>
+      <div class="cell"><span class="k" id="rAk">Best US model</span><span class="v" id="rA">—</span><span class="s" id="rAs">—</span></div>
+      <div class="cell"><span class="k" id="rBk">Best China model</span><span class="v" id="rB">—</span><span class="s" id="rBs">—</span></div>
+      <div class="cell gap" id="gapCell"><span class="k">Gap</span><span class="v" id="rGap">—</span><span class="s" id="rGaps">—</span></div>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="chart" id="box1"><svg id="c1" role="img" aria-label="Intelligence Index scores over time, with best-so-far lines for each side of the race"></svg><div class="tip" id="tip"></div></div>
+    <div class="cap"><span class="cd" id="capd"></span><p id="capt"></p></div>
+    <div class="player">
+      <button class="pbtn" type="button" id="play" aria-label="Play"></button>
+      <div class="track" id="track"><div class="rail"></div><div class="fill" id="fill"></div><div id="beats"></div><input id="scrub" type="range" min="0" max="1000" value="1000" aria-label="Timeline"><div class="knob" id="knob"></div></div>
+      <span class="tlbl" id="tlbl">Oct 2026</span>
+      <div class="speed" role="group" aria-label="Speed"><button type="button" data-sp="0.5" aria-pressed="false">½×</button><button type="button" data-sp="1" aria-pressed="true">1×</button><button type="button" data-sp="2" aria-pressed="false">2×</button></div>
+    </div>
+    <div class="srcline"><span>Data: Artificial Analysis, read 23 Oct 2026 · scores on Intelligence Index v4.3.2</span><span>Nabeel · The Frontier Chase</span></div>
+  </section>
+
+  <article>
+    <figure class="cover"><img src="plate-1.jpg" alt="Engraved-style plate of two rising staircases, blue for the United States and vermilion for China, ending 2.5 points apart" width="2000" height="1125"><figcaption>Plate I. Each mark is one scored model; the two staircases are the best-so-far score for each country.</figcaption></figure>
+    <div class="col">
+      <div class="eyebrow">By Nabeel · Analysis · 23 October 2026</div>
+      <h2 style="margin-top:8px;font-size:clamp(30px,5vw,44px)">Two and a half points</h2>
+      <p class="lede">At some point today, Moonshot AI released Kimi K3.1 Pro, and the distance between the best American model and the best Chinese model fell to 2.5 points on the Artificial Analysis Intelligence Index. Measured as a share of the leader's score, China has never been closer.</p>
+      <p>Claude Opus 5.5, released by Anthropic on 22 September, still holds the top score at 57.6. Kimi K3.1 Pro scores 55.1. A month ago the gap between the two countries' best models was 11.3 points. One release closed most of it.</p>
+      <div class="facts">
+        <div><b>2.5</b><span>points between the best US and best Chinese model today, down from 11.3 a month ago</span></div>
+        <div><b>96%</b><span>China's best score as a share of the US best, the highest on record</span></div>
+        <div><b>3.1 mo</b><span>average lag of new open-weights records behind closed models in 2026, down from 7.8 in 2024</span></div>
+      </div>
+
+      <h2>Three years on one scale</h2>
+      <p>Artificial Analysis rescores old models whenever it changes its index, so every model in this dataset sits on the same scale. That scale is hard. Version 4.3, introduced in September, weights agentic work at 30 percent and draws on tests such as Terminal-Bench 4.0, AutomationBench and Humanity's Last Exam. On it, GPT-4 scores 6.7.</p>
+      <p>The shape that comes out is a staircase that climbs slowly, then fast. From GPT-4 in March 2023 to o1 in December 2024, the frontier rose from 6.7 to 15.2. In the 22 months since, it has climbed to 57.6, nearly four times as high. Most of the climb has come in 2026, with eight new frontier records this year alone.</p>
+
+      <h2>The race between countries</h2>
+      <p>The United States has held the top score on every day in the dataset. China's position behind it has swung widely. When DeepSeek R1 arrived in January 2025 it cut the distance to o1 from 6.7 points to 3.8. Kimi K2 Thinking narrowed it to 2.9 in November 2025. Then a run of American releases (GPT-5.4 in March, Claude Fable 5 in June) pushed the gap to 19.2 points, the widest it has been.</p>
+      <p>Since then the gap has been closing faster than at any time in the record. Kimi K3 in July brought China back to within 6 points. Today's release takes it to 2.5. Press play above with the US vs China race selected to watch the whole sequence.</p>
+      <p class="pull">A month ago the gap was 11.3 points. One release closed most of it.</p>
+      <p>There is a twist in how China got here. Kimi K3, Moonshot's July flagship, shipped with open weights. Kimi K3.1 Pro did not; Artificial Analysis lists it as proprietary. It fits a wider pattern in the data. Chinese labs accounted for one proprietary scored model in 2024, seven in 2025 and 24 so far in 2026.</p>
+
+      <h2>Open versus closed: a gap in points, a sprint in time</h2>
+      <p>The open-weights story looks different depending on how you measure it. In points, the best closed model leads the best open-weights model, Xiaomi's MiMo-V2.6-Pro, by 11.3. That is wider than a year ago, when the gap was 6.4. The low point was 2.9, in November 2025.</p>
+      <p>Measured in time, open weights are catching up faster every year. The chart below takes every model that set a new open-weights high and asks how long ago a proprietary model first reached the same score. In 2024 the answer averaged 7.8 months. In 2025 it was 5.9 months. In 2026 it is 3.1 months, and Kimi K3 needed only about five weeks to beat every closed model released before 9 June.</p>
+      <figure class="fig" id="lagfig">
+        <h3>How far behind is open weights, in months?</h3>
+        <p class="sub">Each dot is a new open-weights record. Its height is the time since a proprietary model first scored at least as much. Dashed lines are yearly averages.</p>
+        <svg id="c2" role="img" aria-label="Catch-up lag in months for each open-weights record, 2024 to 2026"></svg>
+      </figure>
+      <p>Both readings are true at once. The closed frontier keeps moving, so a fixed lag in time still shows up as a large gap in points whenever the frontier jumps. When frontier progress is this fast, three months behind can mean ten points behind.</p>
+
+      <h2>Why the lag keeps shrinking</h2>
+      <p>The index does not explain causes, but the records point to a few likely contributors.</p>
+      <ul>
+        <li><strong>Reasoning went public.</strong> Before January 2025 no open model had matched a closed reasoning model. DeepSeek R1 matched o1 six weeks after o1's release and published its methods. Every open record since has been a reasoning model.</li>
+        <li><strong>Mixture-of-experts at huge scale.</strong> The leading open models are very large in total but use a small slice per token: Kimi K3 has 2.8 trillion parameters with 104 billion active, and MiMo-V2.6-Pro has 1.02 trillion with 42 billion active. That keeps the cost of serving them manageable.</li>
+        <li><strong>Volume.</strong> China-based labs released 90 open-weights model variants that Artificial Analysis scored in 2026, against 38 from US labs. More attempts mean more chances to set a record.</li>
+      </ul>
+
+      <h2>What it means</h2>
+      <p><strong>For builders,</strong> leadership is now measured in weeks and changes hands with single releases. A model chosen in September can trail by a wide margin in October, and the reverse. Contracts, routing and evaluation pipelines that make switching easy are worth more than a bet on any one lab.</p>
+      <p><strong>For the leading labs,</strong> a lead buys a few months of advantage, not a year. The value of being first depends more and more on what is built around a model (products, tools, distribution) and less on the score itself.</p>
+      <p><strong>For policy,</strong> the data will be read in different ways. Supporters of tighter export controls on chips and models argue that the 2.5-point gap shows controls have not yet bitten and need strengthening. Critics argue that China closed the distance despite controls, and that restrictions mainly push talent and investment elsewhere. The index measures capability on a set of tests; it does not settle that argument.</p>
+      <p><strong>For everyone else,</strong> frontier-level capability now reaches cheaper and smaller models within months. The companion piece below follows that story down to models that fit on a laptop or a phone.</p>
+
+      <h2>What to watch</h2>
+      <ul>
+        <li>Whether the US labs answer Kimi K3.1 Pro within weeks, as they have after every previous narrowing.</li>
+        <li>Whether Moonshot and other Chinese labs keep their best models closed. If they do, the open-weights line could fall further behind the frontier even as China gains.</li>
+        <li>American open weights. Meta's Muse Spark Open (38.9, 15 October) is the strongest US open model to date, and Reflection's Beam (30) is second.</li>
+        <li>Intelligence Index v5. Artificial Analysis is rolling out harder evaluations, and each change of scale has widened the measured gaps.</li>
+      </ul>
+
+      <h2>How this was made</h2>
+      <p>Scores, release dates, licences and creator countries come from the model data embedded in Artificial Analysis model pages, read on 23 October 2026 (697 models released since January 2023). Where several variants of a model share a day, the highest-scoring one counts. Artificial Analysis marks many older scores as estimates; the tooltips say which. Earlier index versions produced smaller gaps: Artificial Analysis reported a 4-point open-versus-closed gap at Kimi K3's launch, on version 4.2.</p>
+
+      <a class="next" href="#" id="nextlink">
+        <img src="plate-2.jpg" alt="Plate of model sizes as rings, with small models in vermilion catching up to a blue frontier line" width="2000" height="1125">
+        <div><div class="eyebrow">Companion piece</div><strong>The Shrinking Frontier</strong><span>How a 27-billion-parameter model now matches what the frontier scored in March, and what that means for laptops and phones.</span></div>
+      </a>
+    </div>
+
+    <details>
+      <summary>Frontier records table</summary>
+      <div class="tbl"><table id="tbl"><thead><tr><th>Date</th><th>Model</th><th>Lab</th><th>Country</th><th>Weights</th><th>Score</th></tr></thead><tbody></tbody></table></div>
+    </details>
+    <div class="col sources" style="margin-top:22px">
+      <div class="eyebrow" style="margin-bottom:6px">Sources</div>
+      <ul>
+        <li><a href="https://artificialanalysis.ai/trends" target="_blank" rel="noopener">Artificial Analysis, AI Trends</a></li>
+        <li><a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener">Artificial Analysis, LLM Leaderboard</a></li>
+        <li><a href="https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-3" target="_blank" rel="noopener">Announcing the Artificial Analysis Intelligence Index v4.3</a></li>
+        <li><a href="https://artificialanalysis.ai/articles/recent-open-weights-model-launches" target="_blank" rel="noopener">Artificial Analysis, Recent open weights model launches</a></li>
+      </ul>
+    </div>
+  </article>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const RAW = [["Llama 65B","Meta","us",1,"2023-02-24",5.0,1],["GPT-4","OpenAI","us",0,"2023-03-14",6.7,1],["Claude Instant","Anthropic","us",0,"2023-03-14",5.0,1],["PALM-2","Google","us",0,"2023-05-10",5.4,1],["Claude 2.0","Anthropic","us",0,"2023-07-11",5.5,1],["Llama 2 Chat 70B","Meta","us",1,"2023-07-18",5.3,1],["Llama 2 Chat 13B","Meta","us",1,"2023-07-18",5.3,1],["Llama 2 Chat 7B","Meta","us",1,"2023-07-18",5.7,1],["Qwen Chat 14B","Alibaba","cn",1,"2023-09-25",5.0,1],["Mistral 7B Instruct","Mistral","fr",1,"2023-09-27",5.0,1],["GPT-4 Turbo","OpenAI","us",0,"2023-11-06",7.0,1],["Claude 2.1","Anthropic","us",0,"2023-11-21",5.6,1],["DeepSeek LLM 67B Chat (V1)","DeepSeek","cn",1,"2023-11-29",5.3,1],["Qwen Chat 72B","Alibaba","cn",1,"2023-11-30",5.4,1],["Gemini 1.0 Ultra","Google","us",0,"2023-12-06",5.8,1],["Gemini 1.0 Pro","Google","us",0,"2023-12-06",5.3,1],["Mistral Medium","Mistral","fr",0,"2023-12-11",5.5,1],["Mixtral 8x7B Instruct","Mistral","fr",1,"2023-12-11",5.1,1],["OpenChat 3.5 (1210)","OpenChat","cn",1,"2023-12-18",5.3,1],["Solar Mini","Upstage","kr",1,"2024-01-25",6.4,1],["Mistral Small (Feb '24)","Mistral","fr",0,"2024-02-26",5.5,1],["Mistral Large (Feb '24)","Mistral","fr",0,"2024-02-26",5.8,1],["Phi-4 Mini Instruct","Microsoft","us",1,"2024-02-26",6.3,1],["Claude 3 Haiku","Anthropic","us",0,"2024-03-04",5.6,1],["Claude 3 Opus","Anthropic","us",0,"2024-03-04",8.7,1],["Claude 3 Sonnet","Anthropic","us",0,"2024-03-04",5.9,1],["Command-R (Mar '24)","Cohere","ca",1,"2024-03-12",5.0,1],["Grok-1","SpaceXAI","us",1,"2024-03-17",6.3,1],["DBRX Instruct","Databricks","us",1,"2024-03-27",5.3,1],["Command-R+ (Apr '24)","Cohere","ca",1,"2024-04-04",5.3,1],["Mixtral 8x22B Instruct","Mistral","fr",1,"2024-04-17",5.7,1],["Llama 3 Instruct 8B","Meta","us",1,"2024-04-18",4.8,1],["Llama 3 Instruct 70B","Meta","us",1,"2024-04-18",5.5,1],["Phi-3 Mini Instruct 3.8B","Microsoft","us",1,"2024-04-23",5.8,1],["Arctic Instruct","Snowflake","us",1,"2024-04-24",5.4,1],["Qwen1.5 Chat 110B","Alibaba","cn",1,"2024-04-25",5.7,1],["DeepSeek-V2-Chat","DeepSeek","cn",1,"2024-05-06",5.5,1],["GPT-4o (May '24)","OpenAI","us",0,"2024-05-13",7.3,1],["Gemini 1.5 Flash (May '24)","Google","us",0,"2024-05-14",5.9,1],["Gemini 1.5 Pro (May '24)","Google","us",0,"2024-05-15",6.4,1],["Qwen2 Instruct 72B","Alibaba","cn",1,"2024-06-07",6.3,1],["DeepSeek-Coder-V2","DeepSeek","cn",1,"2024-06-17",6.0,1],["DeepSeek Coder V2 Lite Instruct","DeepSeek","cn",1,"2024-06-17",5.3,1],["Claude 3.5 Sonnet (June '24)","Anthropic","us",0,"2024-06-21",7.2,1],["GPT-4o mini","OpenAI","us",0,"2024-07-18",6.7,1],["Llama 3.1 Instruct 405B","Meta","us",1,"2024-07-23",7.3,1],["Llama 3.1 Instruct 70B","Meta","us",1,"2024-07-23",6.6,1],["Llama 3.1 Instruct 8B","Meta","us",1,"2024-07-23",6.9,1],["Mistral Large 2 (Jul '24)","Mistral","fr",1,"2024-07-24",6.8,1],["GPT-4o (Aug '24)","OpenAI","us",0,"2024-08-06",7.7,1],["Grok Beta","SpaceXAI","us",0,"2024-08-13",6.9,1],["Hermes 3 - Llama-3.1 70B","Nous Research","us",1,"2024-08-15",6.0,1],["Jamba 1.5 Mini","AI21 Labs","il",1,"2024-08-22",5.2,1],["Jamba 1.5 Large","AI21 Labs","il",1,"2024-08-22",6.0,1],["DeepSeek-V2.5","DeepSeek","cn",1,"2024-09-06",6.6,1],["o1-preview","OpenAI","us",0,"2024-09-12",11.4,1],["o1-mini","OpenAI","us",0,"2024-09-12",9.8,1],["Mistral Small (Sep '24)","Mistral","fr",1,"2024-09-17",5.8,1],["Qwen2.5 Instruct 32B","Alibaba","cn",1,"2024-09-19",6.9,1],["Qwen2.5 Instruct 72B","Alibaba","cn",1,"2024-09-19",7.7,1],["Qwen2.5 Coder Instruct 7B","Alibaba","cn",1,"2024-09-19",5.8,1],["Gemini 1.5 Pro (Sep '24)","Google","us",0,"2024-09-24",7.9,1],["Gemini 1.5 Flash (Sep '24)","Google","us",0,"2024-09-24",7.1,1],["Llama 3.2 Instruct 11B (Vision)","Meta","us",1,"2024-09-25",5.4,1],["Llama 3.2 Instruct 3B","Meta","us",1,"2024-09-25",5.7,1],["Llama 3.2 Instruct 1B","Meta","us",1,"2024-09-25",4.8,1],["Llama 3.2 Instruct 90B (Vision)","Meta","us",1,"2024-09-25",6.4,1],["Molmo 7B-D","Allen Institute for AI","us",1,"2024-09-25",5.6,1],["LFM 40B","Liquid AI","us",0,"2024-09-30",5.4,1],["Gemini 1.5 Flash-8B","Google","us",0,"2024-10-03",6.2,1],["Reka Flash (Sep '24)","Reka AI","us",0,"2024-10-04",6.4,1],["Llama 3.1 Nemotron Instruct 70B","NVIDIA","us",1,"2024-10-15",6.9,1],["Claude 3.5 Haiku","Anthropic","us",0,"2024-10-22",8.9,1],["Claude 3.5 Sonnet (Oct '24)","Anthropic","us",0,"2024-10-22",7.9,1],["Qwen2.5 Coder Instruct 32B","Alibaba","cn",1,"2024-11-11",6.7,1],["Qwen2.5 Turbo","Alibaba","cn",0,"2024-11-18",6.4,1],["Mistral Large 2 (Nov '24)","Mistral","fr",1,"2024-11-18",7.6,1],["Pixtral Large","Mistral","fr",1,"2024-11-18",7.1,1],["GPT-4o (Nov '24)","OpenAI","us",0,"2024-11-20",8.4,1],["OLMo 2 7B","Allen Institute for AI","us",1,"2024-11-26",5.6,1],["QwQ 32B-Preview","Alibaba","cn",1,"2024-11-27",7.6,1],["Nova Micro","Amazon","us",0,"2024-12-03",5.9,1],["Nova Pro","Amazon","us",0,"2024-12-03",7.0,1],["Nova Lite","Amazon","us",0,"2024-12-03",6.7,1],["o1","OpenAI","us",0,"2024-12-05",15.2,1],["Llama 3.3 Instruct 70B","Meta","us",1,"2024-12-06",7.7,1],["DeepSeek-V2.5 (Dec '24)","DeepSeek","cn",1,"2024-12-10",6.6,1],["Gemini 2.0 Flash (experimental)","Google","us",0,"2024-12-11",8.2,1],["Grok 2 (Dec '24)","SpaceXAI","us",1,"2024-12-12",7.1,1],["Phi-4","Microsoft","us",1,"2024-12-12",5.9,1],["Gemini 2.0 Flash Thinking Experimental (Dec '24)","Google","us",0,"2024-12-19",6.6,1],["DeepSeek V3 (Dec '24)","DeepSeek","cn",1,"2024-12-26",8.5,0],["DeepSeek R1 (Jan '25)","DeepSeek","cn",1,"2025-01-20",11.4,0],["DeepSeek R1 Distill Llama 8B","DeepSeek","cn",1,"2025-01-20",6.5,1],["DeepSeek R1 Distill Qwen 1.5B","DeepSeek","cn",1,"2025-01-20",5.5,1],["DeepSeek R1 Distill Llama 70B","DeepSeek","cn",1,"2025-01-20",7.9,1],["DeepSeek R1 Distill Qwen 14B","DeepSeek","cn",1,"2025-01-20",7.8,1],["DeepSeek R1 Distill Qwen 32B","DeepSeek","cn",1,"2025-01-20",8.4,1],["Gemini 2.0 Flash Thinking Experimental (Jan '25)","Google","us",0,"2025-01-21",9.4,1],["Sonar Pro","Perplexity","us",0,"2025-01-21",7.6,1],["Sonar","Perplexity","us",0,"2025-01-21",7.7,1],["Sonar Reasoning","Perplexity","us",0,"2025-01-28",8.7,1],["Sonar Reasoning Pro","Perplexity","us",0,"2025-01-28",11.8,1],["Qwen2.5 Max","Alibaba","cn",0,"2025-01-28",8.0,1],["Mistral Small 3","Mistral","fr",1,"2025-01-30",6.7,1],["Llama 3.1 Tulu3 405B","Allen Institute for AI","us",1,"2025-01-30",7.2,1],["o3-mini (High)","OpenAI","us",0,"2025-01-31",11.0,0],["o3-mini","OpenAI","us",0,"2025-01-31",12.5,1],["Gemini 2.0 Flash-Lite (Preview)","Google","us",0,"2025-02-05",7.3,1],["Gemini 2.0 Flash (Feb '25)","Google","us",0,"2025-02-05",8.9,1],["Gemini 2.0 Pro Experimental (Feb '25)","Google","us",0,"2025-02-05",8.7,1],["DeepHermes 3 - Llama-3.1 8B Preview (Non-reasoning)","Nous Research","us",1,"2025-02-13",5.1,1],["GPT-4o (ChatGPT)","OpenAI","us",0,"2025-02-15",7.2,1],["Mistral Saba","Mistral","fr",0,"2025-02-17",6.5,1],["R1 1776","Perplexity","us",1,"2025-02-18",6.4,1],["Grok 3","SpaceXAI","us",0,"2025-02-19",12.1,1],["Grok 3 Reasoning Beta","SpaceXAI","us",0,"2025-02-19",10.4,1],["Grok 3 mini Reasoning (High)","SpaceXAI","us",0,"2025-02-19",14.6,1],["Claude 3.7 Sonnet (Reasoning)","Anthropic","us",0,"2025-02-24",17.7,1],["Claude 3.7 Sonnet (Non-reasoning)","Anthropic","us",0,"2025-02-24",15.3,1],["Gemini 2.0 Flash-Lite (Feb '25)","Google","us",0,"2025-02-25",7.4,1],["Phi-4 Multimodal Instruct","Microsoft","us",1,"2025-02-26",5.8,1],["GPT-4.5 (Preview)","OpenAI","us",0,"2025-02-27",9.6,1],["QwQ 32B","Alibaba","cn",1,"2025-03-05",9.5,1],["Jamba 1.6 Large","AI21 Labs","il",1,"2025-03-06",6.0,1],["Jamba 1.6 Mini","AI21 Labs","il",1,"2025-03-06",5.2,1],["Reka Flash 3","Reka AI","us",1,"2025-03-10",5.6,1],["Gemma 3 4B Instruct","Google","us",1,"2025-03-12",4.8,1],["Gemma 3 27B Instruct","Google","us",1,"2025-03-12",4.9,0],["Gemma 3 12B Instruct","Google","us",1,"2025-03-12",3.8,0],["Command A","Cohere","ca",1,"2025-03-13",7.0,1],["OLMo 2 32B","Allen Institute for AI","us",1,"2025-03-13",6.0,1],["DeepHermes 3 - Mistral 24B Preview (Non-reasoning)","Nous Research","us",1,"2025-03-13",6.1,1],["Gemma 3 1B Instruct","Google","us",1,"2025-03-13",4.8,1],["Mistral Small 3.1","Mistral","fr",1,"2025-03-17",7.1,0],["Llama 3.3 Nemotron Super 49B v1 (Reasoning)","NVIDIA","us",1,"2025-03-18",8.9,1],["Llama 3.3 Nemotron Super 49B v1 (Non-reasoning)","NVIDIA","us",1,"2025-03-18",7.3,1],["o1-pro","OpenAI","us",0,"2025-03-19",12.4,1],["Gemini 2.5 Pro Preview (Mar' 25)","Google","us",0,"2025-03-25",15.0,1],["DeepSeek V3 0324","DeepSeek","cn",1,"2025-03-25",9.7,0],["GPT-4o (March 2025, chatgpt-4o-latest)","OpenAI","us",0,"2025-03-27",9.0,1],["Llama 4 Maverick","Meta","us",1,"2025-04-05",9.3,0],["Llama 4 Scout","Meta","us",1,"2025-04-05",6.5,0],["Llama 3.1 Nemotron Ultra 253B v1 (Reasoning)","NVIDIA","us",1,"2025-04-07",7.5,1],["GPT-4.1","OpenAI","us",0,"2025-04-14",12.7,1],["GPT-4.1 nano","OpenAI","us",0,"2025-04-14",7.8,1],["GPT-4.1 mini","OpenAI","us",0,"2025-04-14",10.2,1],["o3","OpenAI","us",0,"2025-04-16",20.2,1],["Granite 3.3 8B (Non-reasoning)","IBM","us",1,"2025-04-16",4.9,1],["o4-mini (High)","OpenAI","us",0,"2025-04-16",16.7,1],["Gemini 2.5 Flash Preview (Non-reasoning)","Google","us",0,"2025-04-17",8.7,1],["Gemini 2.5 Flash Preview (Reasoning)","Google","us",0,"2025-04-17",11.7,1],["Qwen3 0.6B (Non-reasoning)","Alibaba","cn",1,"2025-04-28",4.8,1],["Qwen3 4B (Reasoning)","Alibaba","cn",1,"2025-04-28",7.2,1],["Qwen3 1.7B (Non-reasoning)","Alibaba","cn",1,"2025-04-28",4.9,1],["Qwen3 30B A3B (Reasoning)","Alibaba","cn",1,"2025-04-28",7.6,1],["Qwen3 235B A22B (Non-reasoning)","Alibaba","cn",1,"2025-04-28",8.3,1],["Qwen3 14B (Reasoning)","Alibaba","cn",1,"2025-04-28",6.4,0],["Qwen3 0.6B (Reasoning)","Alibaba","cn",1,"2025-04-28",4.8,1],["Qwen3 1.7B (Reasoning)","Alibaba","cn",1,"2025-04-28",5.2,1],["Qwen3 8B (Reasoning)","Alibaba","cn",1,"2025-04-28",5.2,0],["Qwen3 32B (Reasoning)","Alibaba","cn",1,"2025-04-28",7.2,0],["Qwen3 8B (Non-reasoning)","Alibaba","cn",1,"2025-04-28",6.0,1],["Qwen3 235B A22B (Reasoning)","Alibaba","cn",1,"2025-04-28",9.5,1],["Qwen3 32B (Non-reasoning)","Alibaba","cn",1,"2025-04-28",7.3,1],["Qwen3 4B (Non-reasoning)","Alibaba","cn",1,"2025-04-28",6.6,1],["Qwen3 14B (Non-reasoning)","Alibaba","cn",1,"2025-04-28",6.7,1],["Qwen3 30B A3B (Non-reasoning)","Alibaba","cn",1,"2025-04-28",6.6,1],["Nova Premier","Amazon","us",0,"2025-04-30",9.2,1],["Gemini 2.5 Pro Preview (May' 25)","Google","us",0,"2025-05-06",14.5,1],["Mistral Medium 3","Mistral","fr",0,"2025-05-07",9.0,1],["Gemini 2.5 Flash (Reasoning)","Google","us",0,"2025-05-20",13.1,1],["Solar Pro 2 (Preview) (Non-reasoning)","Upstage","kr",0,"2025-05-20",7.9,1],["Gemini 2.5 Flash (Non-reasoning)","Google","us",0,"2025-05-20",9.9,1],["Solar Pro 2 (Preview) (Reasoning)","Upstage","kr",0,"2025-05-20",9.1,1],["Llama 3.1 Nemotron Nano 4B v1.1 (Reasoning)","NVIDIA","us",1,"2025-05-20",7.3,1],["Gemma 3n E4B Instruct Preview (May '25)","Google","us",1,"2025-05-20",5.8,1],["Devstral Small (May '25)","Mistral","fr",1,"2025-05-21",8.7,1],["Claude 4 Opus (Non-reasoning)","Anthropic","us",0,"2025-05-22",16.6,1],["Claude 4 Opus (Reasoning)","Anthropic","us",0,"2025-05-22",20.6,1],["Claude 4 Sonnet (Reasoning)","Anthropic","us",0,"2025-05-22",18.9,1],["Claude 4 Sonnet (Non-reasoning)","Anthropic","us",0,"2025-05-22",16.6,1],["Sarvam M (Reasoning, Based on Mistral Small 3.1)","Sarvam","in",1,"2025-05-23",5.3,1],["DeepSeek R1 0528 (May '25)","DeepSeek","cn",1,"2025-05-28",13.1,1],["DeepSeek R1 0528 Qwen3 8B","DeepSeek","cn",1,"2025-05-29",8.1,1],["Gemini 2.5 Pro","Google","us",0,"2025-06-05",16.1,0],["Magistral Small 1","Mistral","fr",1,"2025-06-10",8.2,1],["Magistral Medium 1","Mistral","fr",0,"2025-06-10",9.1,1],["o3-pro","OpenAI","us",0,"2025-06-10",21.9,1],["Gemini 2.5 Flash-Lite (Non-reasoning)","Google","us",0,"2025-06-17",6.7,1],["MiniMax M1 40k","MiniMax","cn",1,"2025-06-17",10.0,1],["MiniMax M1 80k","MiniMax","cn",1,"2025-06-17",11.7,1],["Gemini 2.5 Flash-Lite (Reasoning)","Google","us",0,"2025-06-17",8.5,1],["Mistral Small 3.2","Mistral","fr",1,"2025-06-20",7.0,0],["Gemma 3n E4B Instruct","Google","us",1,"2025-06-26",4.8,1],["Gemma 3n E2B Instruct","Google","us",1,"2025-06-26",4.8,1],["ERNIE 4.5 300B A47B","Baidu","cn",1,"2025-06-30",7.5,1],["Jamba 1.7 Large","AI21 Labs","il",1,"2025-07-07",6.1,1],["Jamba 1.7 Mini","AI21 Labs","il",1,"2025-07-07",5.2,1],["Solar Pro 2 (Non-reasoning)","Upstage","kr",0,"2025-07-09",7.0,1],["Solar Pro 2 (Reasoning)","Upstage","kr",0,"2025-07-09",7.5,1],["LFM2 1.2B","Liquid AI","us",1,"2025-07-10",4.8,1],["Grok 4","SpaceXAI","us",0,"2025-07-10",22.5,1],["Devstral Small (Jul '25)","Mistral","fr",1,"2025-07-10",7.6,1],["Devstral Medium","Mistral","fr",0,"2025-07-10",9.0,1],["Kimi K2","Kimi","cn",1,"2025-07-11",12.7,1],["EXAONE 4.0 32B (Non-reasoning)","LG AI Research","kr",1,"2025-07-15",6.3,1],["EXAONE 4.0 32B (Reasoning)","LG AI Research","kr",1,"2025-07-15",8.2,1],["Exaone 4.0 1.2B (Non-reasoning)","LG AI Research","kr",1,"2025-07-15",5.2,1],["Exaone 4.0 1.2B (Reasoning)","LG AI Research","kr",1,"2025-07-15",5.3,1],["Qwen3 235B A22B 2507 Instruct","Alibaba","cn",1,"2025-07-21",12.0,1],["Qwen3 Coder 480B A35B Instruct","Alibaba","cn",1,"2025-07-22",11.9,1],["Llama Nemotron Super 49B v1.5 (Non-reasoning)","NVIDIA","us",1,"2025-07-25",7.4,1],["Llama Nemotron Super 49B v1.5 (Reasoning)","NVIDIA","us",1,"2025-07-25",9.0,1],["Qwen3 235B A22B 2507 (Reasoning)","Alibaba","cn",1,"2025-07-25",12.7,0],["GLM-4.5 (Reasoning)","Z AI","cn",1,"2025-07-28",12.8,1],["GLM-4.5-Air","Z AI","cn",1,"2025-07-28",11.1,1],["Qwen3 30B A3B 2507 Instruct","Alibaba","cn",1,"2025-07-29",7.5,1],["Qwen3 30B A3B 2507 (Reasoning)","Alibaba","cn",1,"2025-07-30",9.8,0],["Qwen3 Coder 30B A3B Instruct","Alibaba","cn",1,"2025-07-31",9.6,1],["gpt-oss-20b (Low)","OpenAI","us",1,"2025-08-05",10.0,1],["gpt-oss-20b (High)","OpenAI","us",1,"2025-08-05",9.0,0],["gpt-oss-120b (Low)","OpenAI","us",1,"2025-08-05",10.2,1],["Claude 4.1 Opus (Reasoning)","Anthropic","us",0,"2025-08-05",22.8,1],["gpt-oss-120b (High)","OpenAI","us",1,"2025-08-05",11.6,0],["Claude 4.1 Opus (Non-reasoning)","Anthropic","us",0,"2025-08-05",18.6,1],["Qwen3 4B 2507 (Reasoning)","Alibaba","cn",1,"2025-08-06",8.8,1],["Qwen3 4B 2507 Instruct","Alibaba","cn",1,"2025-08-06",6.7,1],["GPT-5 nano (Minimal)","OpenAI","us",0,"2025-08-07",7.1,1],["GPT-5 mini (High)","OpenAI","us",0,"2025-08-07",16.8,0],["GPT-5 (High)","OpenAI","us",0,"2025-08-07",23.0,1],["GPT-5 (Medium)","OpenAI","us",0,"2025-08-07",22.9,1],["GPT-5 (Low)","OpenAI","us",0,"2025-08-07",20.8,1],["GPT-5 nano (Medium)","OpenAI","us",0,"2025-08-07",12.5,1],["GPT-5 mini (Minimal)","OpenAI","us",0,"2025-08-07",9.9,1],["GPT-5 mini (Medium)","OpenAI","us",0,"2025-08-07",20.6,1],["GPT-5 (Minimal)","OpenAI","us",0,"2025-08-07",11.4,1],["GPT-5 nano (High)","OpenAI","us",0,"2025-08-07",13.0,1],["GPT-5 (ChatGPT)","OpenAI","us",0,"2025-08-07",10.4,1],["GLM-4.5V (Non-reasoning)","Z AI","cn",1,"2025-08-11",6.7,1],["GLM-4.5V (Reasoning)","Z AI","cn",1,"2025-08-11",7.6,1],["Mistral Medium 3.1","Mistral","fr",0,"2025-08-12",9.2,0],["Gemma 3 270M","Google","us",1,"2025-08-14",5.1,1],["NVIDIA Nemotron Nano 9B V2 (Non-reasoning)","NVIDIA","us",1,"2025-08-18",6.8,1],["NVIDIA Nemotron Nano 9B V2 (Reasoning)","NVIDIA","us",1,"2025-08-18",7.4,1],["Seed-OSS-36B-Instruct","ByteDance Seed","cn",1,"2025-08-20",12.1,1],["DeepSeek V3.1 (Reasoning)","DeepSeek","cn",1,"2025-08-21",13.5,1],["DeepSeek V3.1 (Non-reasoning)","DeepSeek","cn",1,"2025-08-21",13.7,1],["Hermes 4 - Llama-3.1 70B (Non-reasoning)","Nous Research","us",1,"2025-08-27",6.7,1],["Hermes 4 - Llama-3.1 70B (Reasoning)","Nous Research","us",1,"2025-08-27",7.9,1],["Hermes 4 - Llama-3.1 405B (Reasoning)","Nous Research","us",1,"2025-08-27",7.5,1],["Hermes 4 - Llama-3.1 405B (Non-reasoning)","Nous Research","us",1,"2025-08-27",7.4,1],["Grok Code Fast 1","SpaceXAI","us",0,"2025-08-28",14.1,1],["Apertus 70B Instruct","Swiss AI Initiative","ch",1,"2025-09-02",5.1,1],["Apertus 8B Instruct","Swiss AI Initiative","ch",1,"2025-09-02",4.8,1],["Qwen3 Max (Preview)","Alibaba","cn",0,"2025-09-05",12.6,1],["Kimi K2 0905","Kimi","cn",1,"2025-09-05",15.3,1],["Ling-mini-2.0","InclusionAI","cn",1,"2025-09-09",5.5,1],["Qwen3 Next 80B A3B Instruct","Alibaba","cn",1,"2025-09-11",9.6,1],["Qwen3 Next 80B A3B (Reasoning)","Alibaba","cn",1,"2025-09-11",11.2,1],["Magistral Small 1.2","Mistral","fr",1,"2025-09-17",8.6,1],["Ling-flash-2.0","InclusionAI","cn",1,"2025-09-17",7.8,1],["Magistral Medium 1.2","Mistral","fr",0,"2025-09-18",11.8,1],["Grok 4 Fast (Non-reasoning)","SpaceXAI","us",0,"2025-09-19",11.1,1],["Ring-flash-2.0","InclusionAI","cn",1,"2025-09-19",7.2,1],["Grok 4 Fast (Reasoning)","SpaceXAI","us",0,"2025-09-19",17.9,1],["DeepSeek V3.1 Terminus (Reasoning)","DeepSeek","cn",1,"2025-09-22",14.8,0],["Qwen3 Omni 30B A3B Instruct","Alibaba","cn",1,"2025-09-22",6.0,1],["Granite 4.0 Micro","IBM","us",1,"2025-09-22",5.1,1],["Granite 4.0 H Small","IBM","us",1,"2025-09-22",6.0,1],["Qwen3 Omni 30B A3B (Reasoning)","Alibaba","cn",1,"2025-09-22",7.8,1],["DeepSeek V3.1 Terminus (Non-reasoning)","DeepSeek","cn",1,"2025-09-22",13.9,1],["GPT-5 Codex (High)","OpenAI","us",0,"2025-09-23",24.9,1],["LFM2 2.6B","Liquid AI","us",1,"2025-09-23",5.2,1],["Qwen3 Max","Alibaba","cn",0,"2025-09-23",15.6,1],["Qwen3 VL 235B A22B (Reasoning)","Alibaba","cn",1,"2025-09-23",13.4,1],["Qwen3 VL 235B A22B Instruct","Alibaba","cn",1,"2025-09-23",9.9,1],["Gemini 2.5 Flash-Lite Preview (Sep '25) (Non-reasoning)","Google","us",0,"2025-09-25",9.3,1],["Gemini 2.5 Flash-Lite Preview (Sep '25) (Reasoning)","Google","us",0,"2025-09-25",10.4,1],["Gemini 2.5 Flash Preview (Sep '25) (Non-reasoning)","Google","us",0,"2025-09-25",12.4,1],["Gemini 2.5 Flash Preview (Sep '25) (Reasoning)","Google","us",0,"2025-09-25",15.5,1],["DeepSeek V3.2 Exp (Non-reasoning)","DeepSeek","cn",1,"2025-09-29",13.9,1],["Claude 4.5 Sonnet (Reasoning)","Anthropic","us",0,"2025-09-29",20.7,0],["Claude 4.5 Sonnet (Non-reasoning)","Anthropic","us",0,"2025-09-29",19.3,1],["DeepSeek V3.2 Exp (Reasoning)","DeepSeek","cn",1,"2025-09-29",16.6,1],["GLM-4.6 (Reasoning)","Z AI","cn",1,"2025-09-30",18.5,1],["GLM-4.6 (Non-reasoning)","Z AI","cn",1,"2025-09-30",14.9,1],["Apriel-v1.5-15B-Thinker","ServiceNow","us",1,"2025-09-30",13.8,1],["Qwen3 VL 30B A3B Instruct","Alibaba","cn",1,"2025-10-03",7.9,1],["Qwen3 VL 30B A3B (Reasoning)","Alibaba","cn",1,"2025-10-03",9.5,1],["LFM2 8B A1B","Liquid AI","us",1,"2025-10-07",4.9,1],["Ling-1T","InclusionAI","cn",1,"2025-10-08",9.2,1],["Jamba Reasoning 3B","AI21 Labs","il",1,"2025-10-08",5.7,1],["Ring-1T","InclusionAI","cn",1,"2025-10-13",10.9,1],["Qwen3 VL 8B Instruct","Alibaba","cn",1,"2025-10-14",7.3,1],["Qwen3 VL 8B (Reasoning)","Alibaba","cn",1,"2025-10-14",8.2,1],["Qwen3 VL 4B Instruct","Alibaba","cn",1,"2025-10-14",5.7,1],["Qwen3 VL 4B (Reasoning)","Alibaba","cn",1,"2025-10-14",7.0,1],["Claude 4.5 Haiku (Reasoning)","Anthropic","us",0,"2025-10-15",16.9,0],["Claude 4.5 Haiku (Non-reasoning)","Anthropic","us",0,"2025-10-15",15.4,1],["Qwen3 VL 32B Instruct","Alibaba","cn",1,"2025-10-21",8.4,1],["Qwen3 VL 32B (Reasoning)","Alibaba","cn",1,"2025-10-21",11.9,1],["MiniMax-M2","MiniMax","cn",1,"2025-10-26",18.6,1],["Granite 4.0 350M","IBM","us",1,"2025-10-28",4.8,1],["NVIDIA Nemotron Nano 12B v2 VL (Reasoning)","NVIDIA","us",1,"2025-10-28",7.5,1],["Granite 4.0 1B","IBM","us",1,"2025-10-28",5.0,1],["Granite 4.0 H 350M","IBM","us",1,"2025-10-28",4.8,1],["NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning)","NVIDIA","us",1,"2025-10-28",5.8,1],["Granite 4.0 H 1B","IBM","us",1,"2025-10-28",5.2,1],["Nova 2.0 Lite (High)","Amazon","us",0,"2025-10-29",13.4,1],["Nova 2.0 Lite (Low)","Amazon","us",0,"2025-10-29",11.8,1],["Nova 2.0 Lite (Non-reasoning)","Amazon","us",0,"2025-10-29",8.7,1],["Nova 2.0 Lite (Medium)","Amazon","us",0,"2025-10-29",12.5,1],["Kimi Linear 48B A3B Instruct","Kimi","cn",1,"2025-10-30",7.3,1],["Qwen3 Max Thinking (Preview)","Alibaba","cn",0,"2025-11-03",16.3,1],["Kimi K2 Thinking","Kimi","cn",1,"2025-11-06",22.0,1],["Doubao Seed Code","ByteDance Seed","cn",0,"2025-11-11",16.9,1],["KAT-Coder-Pro V1","KwaiKAT","cn",0,"2025-11-11",18.6,1],["GPT-5.1 Codex (High)","OpenAI","us",0,"2025-11-13",23.7,1],["GPT-5.1 (High)","OpenAI","us",0,"2025-11-13",24.7,1],["ERNIE 5.0 Thinking Preview","Baidu","cn",0,"2025-11-13",14.3,1],["GPT-5.1 (Non-reasoning)","OpenAI","us",0,"2025-11-13",13.3,1],["GPT-5.1 Codex mini (High)","OpenAI","us",0,"2025-11-13",20.4,1],["Gemini 3 Pro Preview (Low)","Google","us",0,"2025-11-18",22.3,1],["Gemini 3 Pro Preview (High)","Google","us",0,"2025-11-18",28.0,1],["Grok 4.1 Fast (Reasoning)","SpaceXAI","us",0,"2025-11-19",20.4,1],["Grok 4.1 Fast (Non-reasoning)","SpaceXAI","us",0,"2025-11-19",11.3,1],["Olmo 3 7B Think","Allen Institute for AI","us",1,"2025-11-20",5.6,1],["Olmo 3 7B Instruct","Allen Institute for AI","us",1,"2025-11-20",5.2,1],["Olmo 3 32B Think","Allen Institute for AI","us",1,"2025-11-20",6.5,1],["Claude Opus 4.5 (Reasoning)","Anthropic","us",0,"2025-11-24",29.1,1],["Claude Opus 4.5 (Non-reasoning)","Anthropic","us",0,"2025-11-24",23.7,1],["Apriel-v1.6-15B-Thinker","ServiceNow","us",1,"2025-11-25",13.4,1],["Nova 2.0 Omni (Medium)","Amazon","us",0,"2025-11-26",13.6,1],["Nova 2.0 Omni (Non-reasoning)","Amazon","us",0,"2025-11-26",8.2,1],["Nova 2.0 Omni (Low)","Amazon","us",0,"2025-11-26",11.1,1],["Nova 2.0 Pro Preview (Medium)","Amazon","us",0,"2025-11-27",14.2,1],["INTELLECT-3 (Based on GLM-4.5-Air)","Prime Intellect","us",1,"2025-11-27",10.6,1],["Nova 2.0 Pro Preview (Non-reasoning)","Amazon","us",0,"2025-11-27",10.0,1],["Nova 2.0 Pro Preview (Low)","Amazon","us",0,"2025-11-27",12.8,1],["DeepSeek V3.2 Speciale","DeepSeek","cn",1,"2025-12-01",14.5,1],["DeepSeek V3.2 (Non-reasoning)","DeepSeek","cn",1,"2025-12-01",16.0,1],["DeepSeek V3.2 (Reasoning)","DeepSeek","cn",1,"2025-12-01",21.5,1],["Mistral Large 3","Mistral","fr",1,"2025-12-02",9.3,0],["Ministral 3 3B","Mistral","fr",1,"2025-12-02",4.8,0],["Ministral 3 14B","Mistral","fr",1,"2025-12-02",6.0,0],["Ministral 3 8B","Mistral","fr",1,"2025-12-02",5.5,0],["Motif-2-12.7B-Reasoning","Motif Technologies","kr",0,"2025-12-04",9.2,1],["K2-V2 (High)","Institute of Foundation Models","ae",1,"2025-12-05",9.9,1],["K2-V2 (Low)","Institute of Foundation Models","ae",1,"2025-12-05",7.3,1],["K2-V2 (Medium)","Institute of Foundation Models","ae",1,"2025-12-05",9.0,1],["GLM-4.6V (Non-reasoning)","Z AI","cn",1,"2025-12-08",8.4,1],["GLM-4.6V (Reasoning)","Z AI","cn",1,"2025-12-08",11.2,1],["Devstral 2","Mistral","fr",1,"2025-12-09",8.6,0],["Devstral Small 2","Mistral","fr",1,"2025-12-09",7.5,0],["GPT-5.2 Codex (Xhigh)","OpenAI","us",0,"2025-12-11",28.5,1],["Molmo2-8B","Allen Institute for AI","us",1,"2025-12-11",5.0,1],["GPT-5.2 (Xhigh)","OpenAI","us",0,"2025-12-11",30.4,1],["GPT-5.2 (Non-reasoning)","OpenAI","us",0,"2025-12-11",17.0,1],["GPT-5.2 (Medium)","OpenAI","us",0,"2025-12-11",26.5,1],["Mi:dm K 2.5 Pro","Korea Telecom","kr",0,"2025-12-11",11.0,1],["Olmo 3.1 32B Think","Allen Institute for AI","us",1,"2025-12-12",7.1,1],["NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)","NVIDIA","us",1,"2025-12-15",6.8,1],["K2 Think V2","Institute of Foundation Models","ae",1,"2025-12-15",11.5,1],["NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)","NVIDIA","us",1,"2025-12-15",8.9,0],["MiMo-V2-Flash (Feb 2026)","Xiaomi","cn",1,"2025-12-16",22.4,1],["MiMo-V2-Flash (Non-reasoning)","Xiaomi","cn",1,"2025-12-16",16.0,1],["MiMo-V2-Flash (Reasoning)","Xiaomi","cn",1,"2025-12-16",20.8,1],["Solar Open 100B (Reasoning)","Upstage","kr",1,"2025-12-17",10.4,1],["Gemini 3 Flash Preview (Non-reasoning)","Google","us",0,"2025-12-17",17.9,1],["Gemini 3 Flash Preview (Reasoning)","Google","us",0,"2025-12-17",26.3,1],["GLM-4.7 (Reasoning)","Z AI","cn",1,"2025-12-22",22.2,1],["GLM-4.7 (Non-reasoning)","Z AI","cn",1,"2025-12-22",17.4,1],["MiniMax-M2.1","MiniMax","cn",1,"2025-12-23",20.9,1],["HyperCLOVA X SEED Think (32B)","Naver","kr",1,"2025-12-26",11.4,1],["K-EXAONE (Reasoning)","LG AI Research","kr",1,"2025-12-31",14.4,1],["K-EXAONE (Non-reasoning)","LG AI Research","kr",1,"2025-12-31",11.2,1],["Falcon-H1R-7B","TII UAE","ae",1,"2026-01-04",7.8,1],["LFM2.5-VL-1.6B","Liquid AI","us",1,"2026-01-05",4.8,1],["LFM2.5-1.2B-Instruct","Liquid AI","us",1,"2026-01-05",5.2,1],["Olmo 3.1 32B Instruct","Allen Institute for AI","us",1,"2026-01-13",6.5,1],["GLM-4.7-Flash (Reasoning)","Z AI","cn",1,"2026-01-19",14.9,1],["GLM-4.7-Flash (Non-reasoning)","Z AI","cn",1,"2026-01-19",10.6,1],["LFM2.5-1.2B-Thinking","Liquid AI","us",1,"2026-01-20",5.2,1],["Step3 VL 10B","StepFun","cn",1,"2026-01-20",7.7,1],["Qwen3 Max Thinking","Alibaba","cn",0,"2026-01-26",21.3,1],["Kimi K2.5 (Reasoning)","Kimi","cn",1,"2026-01-27",23.5,1],["Kimi K2.5 (Non-reasoning)","Kimi","cn",1,"2026-01-27",19.4,1],["LongCat Flash Lite","LongCat","cn",1,"2026-01-28",11.5,1],["Step 3.5 Flash","StepFun","cn",1,"2026-02-02",16.6,1],["Qwen3 Coder Next","Alibaba","cn",1,"2026-02-03",9.2,0],["Claude Opus 4.6 (Non-reasoning, High)","Anthropic","us",0,"2026-02-05",26.4,1],["Claude Opus 4.6 (Max)","Anthropic","us",0,"2026-02-05",31.9,1],["GPT-5.3 Codex (Xhigh)","OpenAI","us",0,"2026-02-05",32.5,1],["Tri-21B-Think","Trillion Labs","kr",1,"2026-02-10",9.0,1],["Tri-21B-think Preview","Trillion Labs","kr",1,"2026-02-10",9.6,1],["GLM-5 (Reasoning)","Z AI","cn",1,"2026-02-11",27.9,1],["Nanbeige4.1-3B","Nanbeige","cn",1,"2026-02-11",8.4,1],["GLM-5 (Non-reasoning)","Z AI","cn",1,"2026-02-11",21.8,1],["MiniMax-M2.5","MiniMax","cn",1,"2026-02-12",22.8,1],["Qwen3.5 397B A17B (Reasoning)","Alibaba","cn",1,"2026-02-16",18.4,0],["Qwen3.5 397B A17B (Non-reasoning)","Alibaba","cn",1,"2026-02-16",21.4,1],["Claude Sonnet 4.6 (Non-reasoning, High)","Anthropic","us",0,"2026-02-17",24.7,1],["Tiny Aya Global","Cohere","ca",1,"2026-02-17",4.8,1],["Claude Sonnet 4.6 (Max)","Anthropic","us",0,"2026-02-17",30.1,0],["Claude Sonnet 4.6 (Non-reasoning, Low)","Anthropic","us",0,"2026-02-17",23.3,1],["Gemini 3.1 Pro Preview","Google","us",0,"2026-02-19",29.7,0],["Mercury 2","Inception","us",0,"2026-02-20",10.8,0],["Qwen3.5 122B A10B (Non-reasoning)","Alibaba","cn",1,"2026-02-24",17.7,1],["Qwen3.5 27B (Reasoning)","Alibaba","cn",1,"2026-02-24",22.9,1],["Qwen3.5 122B A10B (Reasoning)","Alibaba","cn",1,"2026-02-24",15.6,0],["Qwen3.5 35B A3B (Reasoning)","Alibaba","cn",1,"2026-02-24",19.3,1],["Qwen3.5 27B (Non-reasoning)","Alibaba","cn",1,"2026-02-24",19.4,1],["Qwen3.5 35B A3B (Non-reasoning)","Alibaba","cn",1,"2026-02-24",15.1,1],["LFM2 24B A2B","Liquid AI","us",1,"2026-02-25",5.9,1],["Qwen3.5 2B (Non-reasoning)","Alibaba","cn",1,"2026-03-02",6.2,1],["Qwen3.5 9B (Non-reasoning)","Alibaba","cn",1,"2026-03-02",13.3,1],["Qwen3.5 9B (Reasoning)","Alibaba","cn",1,"2026-03-02",11.2,0],["Qwen3.5 4B (Non-reasoning)","Alibaba","cn",1,"2026-03-02",10.8,1],["Qwen3.5 0.8B (Non-reasoning)","Alibaba","cn",1,"2026-03-02",5.4,1],["Qwen3.5 2B (Reasoning)","Alibaba","cn",1,"2026-03-02",6.9,1],["Qwen3.5 4B (Reasoning)","Alibaba","cn",1,"2026-03-02",13.1,1],["Qwen3.5 0.8B (Reasoning)","Alibaba","cn",1,"2026-03-02",6.1,1],["Gemini 3.1 Flash-Lite","Google","us",0,"2026-03-03",15.6,0],["GPT-5.4 (Non-reasoning)","OpenAI","us",0,"2026-03-05",18.2,1],["GPT-5.4 (Low)","OpenAI","us",0,"2026-03-05",27.6,1],["GPT-5.4 (Xhigh)","OpenAI","us",0,"2026-03-05",39.0,1],["Sarvam 105B (High)","Sarvam","in",1,"2026-03-06",8.8,1],["Sarvam 30B (High)","Sarvam","in",1,"2026-03-06",6.6,1],["Grok 4.20 0309 (Reasoning)","SpaceXAI","us",0,"2026-03-10",25.2,1],["Grok 4.20 0309 (Non-reasoning)","SpaceXAI","us",0,"2026-03-10",14.6,1],["Nemotron 3 Super 120B A12B (Reasoning)","NVIDIA","us",1,"2026-03-11",12.8,0],["GLM-5-Turbo","Z AI","cn",0,"2026-03-15",26.6,1],["Mistral Small 4 (Non-reasoning)","Mistral","fr",1,"2026-03-16",9.0,1],["Mistral Small 4 (Reasoning)","Mistral","fr",1,"2026-03-16",11.3,0],["NVIDIA Nemotron 3 Nano 4B","NVIDIA","us",1,"2026-03-16",4.8,0],["GPT-5.4 mini (Medium)","OpenAI","us",0,"2026-03-17",19.7,1],["GPT-5.4 nano (Medium)","OpenAI","us",0,"2026-03-17",20.0,1],["GPT-5.4 mini (Non-reasoning)","OpenAI","us",0,"2026-03-17",11.1,1],["GPT-5.4 mini (Xhigh)","OpenAI","us",0,"2026-03-17",24.1,0],["GPT-5.4 nano (Non-reasoning)","OpenAI","us",0,"2026-03-17",11.7,1],["GPT-5.4 nano (Xhigh)","OpenAI","us",0,"2026-03-17",20.7,0],["MiniMax-M2.7","MiniMax","cn",1,"2026-03-18",22.8,0],["MiMo-V2-Pro","Xiaomi","cn",0,"2026-03-18",28.6,1],["MiMo-V2-Omni","Xiaomi","cn",0,"2026-03-19",23.9,1],["Nemotron Cascade 2 30B A3B","NVIDIA","us",1,"2026-03-19",11.7,1],["MiMo-V2-Omni-0327","Xiaomi","cn",0,"2026-03-27",25.1,1],["KAT Coder Pro V2","KwaiKAT","cn",0,"2026-03-27",21.7,1],["Qwen3.5 Omni Plus","Alibaba","cn",0,"2026-03-30",20.4,1],["Qwen3.5 Omni Flash","Alibaba","cn",0,"2026-03-30",12.5,1],["GLM 5V Turbo (Reasoning)","Z AI","cn",0,"2026-04-01",23.5,1],["Trinity Large Thinking","Arcee AI","us",1,"2026-04-01",10.8,0],["Step 3.5 Flash 2603","StepFun","cn",0,"2026-04-02",17.0,1],["Gemma 4 26B A4B (Reasoning)","Google","us",1,"2026-04-02",16.7,1],["Gemma 4 26B A4B (Non-reasoning)","Google","us",1,"2026-04-02",13.1,1],["Gemma 4 E2B (Non-reasoning)","Google","us",1,"2026-04-02",6.5,1],["Gemma 4 E2B (Reasoning)","Google","us",1,"2026-04-02",7.8,1],["Gemma 4 31B (Reasoning)","Google","us",1,"2026-04-02",14.7,0],["Gemma 4 31B (Non-reasoning)","Google","us",1,"2026-04-02",13.9,1],["Qwen3.6 Plus","Alibaba","cn",0,"2026-04-02",27.0,1],["Gemma 4 E4B (Non-reasoning)","Google","us",1,"2026-04-03",7.5,1],["Gemma 4 E4B (Reasoning)","Google","us",1,"2026-04-03",8.9,0],["Solar Pro 3","Upstage","kr",0,"2026-04-06",7.8,0],["GLM-5.1 (Reasoning)","Z AI","cn",1,"2026-04-07",26.1,0],["Grok 4.20 0309 v2 (Non-reasoning)","SpaceXAI","us",0,"2026-04-07",14.2,1],["GLM-5.1 (Non-reasoning)","Z AI","cn",1,"2026-04-07",24.2,1],["Grok 4.20 0309 v2 (Reasoning)","SpaceXAI","us",0,"2026-04-07",25.7,1],["Muse Spark","Meta","us",0,"2026-04-08",31.3,1],["EXAONE 4.5 33B (Reasoning)","LG AI Research","kr",1,"2026-04-09",13.2,1],["JT-MINI","China Mobile","cn",0,"2026-04-15",12.2,1],["Claude Opus 4.7 (Non-reasoning, High)","Anthropic","us",0,"2026-04-16",30.9,1],["Qwen3.6 35B A3B (Non-reasoning)","Alibaba","cn",1,"2026-04-16",15.2,1],["Qwen3.6 35B A3B (Reasoning)","Alibaba","cn",1,"2026-04-16",18.2,0],["Claude Opus 4.7 (Max)","Anthropic","us",0,"2026-04-16",40.7,1],["Kimi K2.6 (Reasoning)","Kimi","cn",1,"2026-04-20",27.0,0],["Kimi K2.6 (Non-reasoning)","Kimi","cn",1,"2026-04-20",23.6,1],["Qwen3.6 Max Preview","Alibaba","cn",0,"2026-04-20",28.4,1],["Ling 2.6 Flash","InclusionAI","cn",1,"2026-04-21",9.7,1],["MiMo-V2.5-Pro (Reasoning)","Xiaomi","cn",1,"2026-04-22",26.0,0],["MiMo-V2.5","Xiaomi","cn",1,"2026-04-22",21.8,0],["Qwen3.6 27B (Non-reasoning)","Alibaba","cn",1,"2026-04-22",19.8,1],["MiMo-V2.5-Pro (Non-reasoning)","Xiaomi","cn",1,"2026-04-22",18.3,1],["Qwen3.6 27B (Reasoning)","Alibaba","cn",1,"2026-04-22",21.4,0],["GPT-5.5 (Xhigh)","OpenAI","us",0,"2026-04-23",38.4,0],["Ling-2.6-1T","InclusionAI","cn",1,"2026-04-23",17.0,1],["GPT-5.5 (Medium)","OpenAI","us",0,"2026-04-23",33.8,0],["GPT-5.5 (Non-reasoning)","OpenAI","us",0,"2026-04-23",23.2,1],["Hy3-preview (Reasoning)","Tencent","cn",1,"2026-04-23",22.7,1],["GPT-5.5 (High)","OpenAI","us",0,"2026-04-23",37.0,0],["Hy3-preview (Non-reasoning)","Tencent","cn",1,"2026-04-23",17.0,1],["GPT-5.5 (Low)","OpenAI","us",0,"2026-04-23",30.7,1],["DeepSeek V4 Pro 0424 (High)","DeepSeek","cn",1,"2026-04-24",30.1,1],["DeepSeek V4 Pro 0424 (Non-reasoning)","DeepSeek","cn",1,"2026-04-24",20.8,1],["DeepSeek V4 Flash 0420 (High)","DeepSeek","cn",1,"2026-04-24",24.4,0],["DeepSeek V4 Flash 0420 (Non-reasoning)","DeepSeek","cn",1,"2026-04-24",18.9,1],["DeepSeek V4 Pro 0424 (Max)","DeepSeek","cn",1,"2026-04-24",30.4,0],["DeepSeek V4 Flash 0420 (Max)","DeepSeek","cn",1,"2026-04-24",24.2,0],["Granite 4.1 8B","IBM","us",1,"2026-04-29",6.6,1],["Nemotron 3 Nano Omni 30B A3B Reasoning","NVIDIA","us",1,"2026-04-29",10.3,1],["Granite 4.1 3B","IBM","us",1,"2026-04-29",5.9,1],["Granite 4.1 30B","IBM","us",1,"2026-04-29",7.4,1],["Mistral Medium 3.5","Mistral","fr",1,"2026-04-29",14.2,0],["Grok 4.3 (Medium)","SpaceXAI","us",0,"2026-04-30",24.8,1],["Grok 4.3 (Non-reasoning)","SpaceXAI","us",0,"2026-04-30",14.0,0],["Grok 4.3 (High)","SpaceXAI","us",0,"2026-04-30",24.9,0],["Grok 4.3 (Low)","SpaceXAI","us",0,"2026-04-30",24.3,1],["GPT-5.5 Instant (May 2026)","OpenAI","us",0,"2026-05-05",22.7,1],["Ring-2.6-1T","InclusionAI","cn",1,"2026-05-08",16.6,0],["MiniCPM-V 4.6 1.3B","OpenBMB","cn",1,"2026-05-11",5.7,1],["JT-35B-Flash","China Mobile","cn",0,"2026-05-14",18.7,1],["Gemini 3.5 Flash (High)","Google","us",0,"2026-05-19",32.6,0],["Gemini 3.5 Flash (Minimal)","Google","us",0,"2026-05-19",23.8,1],["Gemini 3.5 Flash (Medium)","Google","us",0,"2026-05-19",33.6,1],["Qwen3.7 Max","Alibaba","cn",0,"2026-05-19",29.5,0],["Command A+","Cohere","ca",1,"2026-05-20",13.1,0],["MiniCPM5-1B (Reasoning)","OpenBMB","cn",1,"2026-05-25",8.8,1],["MiniCPM5-1B (Non-reasoning)","OpenBMB","cn",1,"2026-05-25",8.7,1],["HyperNova 60B 2605 (High, Based on gpt-oss-120b)","Multiverse Computing","es",1,"2026-05-26",11.7,1],["Claude Opus 4.8 (Max)","Anthropic","us",0,"2026-05-28",41.8,0],["LFM2.5-8B-A1B","Liquid AI","us",1,"2026-05-28",7.2,1],["Step 3.7 Flash","StepFun","cn",1,"2026-05-29",19.5,1],["MiniMax-M3","MiniMax","cn",1,"2026-06-01",29.2,0],["Qwen3.7 Plus","Alibaba","cn",0,"2026-06-01",25.2,0],["Nex-N2-Pro (Based on Qwen3.5-397B-A17B)","Nex AGI","cn",1,"2026-06-02",28.2,1],["Gemma 4 12B (Non-reasoning)","Google","us",1,"2026-06-03",9.4,1],["Gemma 4 12B (Reasoning)","Google","us",1,"2026-06-03",14.2,1],["Nemotron 3 Ultra 550B A55B (Reasoning)","NVIDIA","us",1,"2026-06-04",22.9,0],["North Mini Code","Cohere","ca",1,"2026-06-09",9.9,0],["Claude Fable 5 (Max, Opus 4.8 Fallback)","Anthropic","us",0,"2026-06-09",49.6,0],["DiffusionGemma 26B A4B","Google","us",1,"2026-06-10",9.5,1],["Kimi K2.7 Code","Kimi","cn",1,"2026-06-12",25.8,0],["Grok Build 0.1 0616","SpaceXAI","us",0,"2026-06-16",27.2,1],["GLM-5.2 (Non-reasoning)","Z AI","cn",1,"2026-06-16",22.4,1],["GLM-5.2 (Max)","Z AI","cn",1,"2026-06-16",33.7,0],["GPT-5.5 Instant (June 2026)","OpenAI","us",0,"2026-06-25",26.0,0],["LongCat 2.0","LongCat","cn",1,"2026-06-29",19.1,0],["Claude Sonnet 5 (Low)","Anthropic","us",0,"2026-06-30",24.3,0],["Claude Sonnet 5 (Max)","Anthropic","us",0,"2026-06-30",38.2,0],["Claude Sonnet 5 (Xhigh)","Anthropic","us",0,"2026-06-30",34.4,0],["Claude Sonnet 5 (High)","Anthropic","us",0,"2026-06-30",31.7,0],["Claude Sonnet 5 (Non-reasoning, High)","Anthropic","us",0,"2026-06-30",23.2,1],["Claude Sonnet 5 (Medium)","Anthropic","us",0,"2026-06-30",28.1,0],["Hy3","Tencent","cn",1,"2026-07-06",25.3,0],["Grok 4.5 (High)","SpaceXAI","us",0,"2026-07-08",38.8,0],["GPT-5.6 Luna (Low)","OpenAI","us",0,"2026-07-09",21.0,0],["GPT-5.6 Sol (Low)","OpenAI","us",0,"2026-07-09",33.5,0],["GPT-5.6 Terra (Medium)","OpenAI","us",0,"2026-07-09",30.1,0],["GPT-5.6 Luna (Max)","OpenAI","us",0,"2026-07-09",37.3,0],["JT-4.1 Flash 236B A21B (Reasoning)","China Mobile","cn",0,"2026-07-09",33.9,0],["GPT-5.6 Luna (Medium)","OpenAI","us",0,"2026-07-09",25.0,0],["GPT-5.6 Sol (Medium)","OpenAI","us",0,"2026-07-09",39.2,0],["GPT-5.6 Sol (Non-reasoning)","OpenAI","us",0,"2026-07-09",28.3,1],["GPT-5.6 Terra (High)","OpenAI","us",0,"2026-07-09",34.2,0],["GPT-5.6 Luna (Xhigh)","OpenAI","us",0,"2026-07-09",34.6,0],["GPT-5.6 Sol (High)","OpenAI","us",0,"2026-07-09",42.3,0],["JT-4.1 Flash 236B A21B (Non-reasoning)","China Mobile","cn",0,"2026-07-09",27.3,1],["GPT-5.6 Terra (Non-reasoning)","OpenAI","us",0,"2026-07-09",20.8,0],["GPT-5.6 Terra (Xhigh)","OpenAI","us",0,"2026-07-09",38.0,0],["GPT-5.6 Luna (High)","OpenAI","us",0,"2026-07-09",32.1,0],["GPT-5.6 Terra (Max)","OpenAI","us",0,"2026-07-09",42.1,0],["GPT-5.6 Terra (Low)","OpenAI","us",0,"2026-07-09",27.5,0],["Muse Spark 1.1 (Xhigh)","Meta","us",0,"2026-07-09",33.7,0],["GPT-5.6 Sol (Max)","OpenAI","us",0,"2026-07-09",47.0,0],["GPT-5.6 Sol (Xhigh)","OpenAI","us",0,"2026-07-09",44.0,0],["GPT-5.6 Luna (Non-reasoning)","OpenAI","us",0,"2026-07-09",15.5,0],["Motif 3 (Beta)","Motif Technologies","kr",0,"2026-07-14",32.3,1],["Inkling (Xhigh)","Thinking Machines","us",1,"2026-07-15",25.0,0],["Kimi K3 (Low)","Kimi","cn",1,"2026-07-16",30.1,0],["Kimi K3 (Max)","Kimi","cn",1,"2026-07-16",43.6,0],["Gemini 3.5 Flash-Lite","Google","us",0,"2026-07-21",22.2,0],["Gemini 3.6 Flash (High)","Google","us",0,"2026-07-21",34.0,0],["G9v3-3B","AI9Stars","cn",1,"2026-07-23",10.8,1],["Claude Opus 5 (Xhigh)","Anthropic","us",0,"2026-07-24",49.7,0],["Claude Opus 5 (Low)","Anthropic","us",0,"2026-07-24",39.4,0],["Claude Opus 5 (High)","Anthropic","us",0,"2026-07-24",48.1,0],["Celeris-1","Celeris","",0,"2026-07-24",6.3,0],["Claude Opus 5 (Max)","Anthropic","us",0,"2026-07-24",50.8,0],["Claude Opus 5 (Medium)","Anthropic","us",0,"2026-07-24",44.8,0],["Inkling Small","Thinking Machines","us",1,"2026-07-30",25.7,0],["DeepSeek V4 Flash 0731 (Max)","DeepSeek","cn",1,"2026-07-31",34.3,0],["Qwen3.8 Max","Alibaba","cn",0,"2026-08-03",40.2,0],["LFM2.5-2.6B","Liquid AI","us",1,"2026-08-04",8.4,1],["Ling 3.0 Flash","InclusionAI","cn",1,"2026-08-04",20.1,0],["Muse Spark 1.2 (Xhigh)","Meta","us",0,"2026-08-05",39.6,0],["Solar Pro 4","Upstage","kr",0,"2026-08-06",26.6,0],["Ling 3.0 Tiny","InclusionAI","cn",1,"2026-08-06",11.1,0],["Muse Glimmer (High)","Meta","us",1,"2026-08-10",17.5,0],["Quasar 438B (Max, Based on GLM-5.2)","Multiverse Computing","es",0,"2026-08-10",26.7,0],["Nemotron 3.5 Lightning","NVIDIA","us",1,"2026-08-11",12.9,0],["K-EXAONE 2.0 0803","LG AI Research","kr",1,"2026-08-12",19.7,1],["Grok 4.6 (Medium)","SpaceXAI","us",0,"2026-08-12",42.8,0],["Solar Open2 250B","Upstage","kr",1,"2026-08-12",24.7,1],["A.X-K2","SK Telecom","kr",1,"2026-08-12",21.5,0],["Qwen3.8 2.4T A95B","Alibaba","cn",1,"2026-08-12",39.9,0],["Motif 3","Motif Technologies","kr",1,"2026-08-12",33.6,1],["Grok 4.6 (Low)","SpaceXAI","us",0,"2026-08-12",35.1,0],["Grok 4.6 (High)","SpaceXAI","us",0,"2026-08-12",44.3,0],["Grok 4.6 (Xhigh)","SpaceXAI","us",0,"2026-08-12",44.2,0],["DeepSeek V4 Pro 0813 (Max)","DeepSeek","cn",1,"2026-08-13",36.0,0],["Gemini 3.7 Flash (High)","Google","us",0,"2026-08-13",39.1,0],["DeepSeek V4 Pro 0813 (Non-reasoning)","DeepSeek","cn",1,"2026-08-13",20.4,0],["Gemini 3.7 Flash (Low)","Google","us",0,"2026-08-13",36.9,1],["Gemini 3.7 Flash (Medium)","Google","us",0,"2026-08-13",39.6,1],["Qwen3.8 27B (Non-reasoning)","Alibaba","cn",1,"2026-08-14",20.2,0],["Qwen3.8 27B (Medium)","Alibaba","cn",1,"2026-08-14",27.6,0],["Qwen3.8 27B (Low)","Alibaba","cn",1,"2026-08-14",26.2,0],["Qwen3.8 27B (Xhigh)","Alibaba","cn",1,"2026-08-14",33.7,0],["GLM-5.3 (Low)","Z AI","cn",1,"2026-08-18",34.3,0],["GLM-5.3 (Max)","Z AI","cn",1,"2026-08-18",44.8,0],["G9v3-39A5B","AI9Stars","cn",1,"2026-08-20",21.8,1],["DeepSeek V4 Flash Vision (Max)","DeepSeek","cn",0,"2026-08-21",34.8,0],["Granite 4.2 3B","IBM","us",1,"2026-08-25",9.1,0],["Granite 4.2 30B","IBM","us",1,"2026-08-25",12.7,0],["Granite 4.2 8B","IBM","us",1,"2026-08-25",11.1,0],["GLM-5.3-Flash","Z AI","cn",1,"2026-08-26",41.8,0],["Qwen3.8-Flash-Next","Alibaba","cn",1,"2026-08-26",39.8,0],["Agnes 2.5 Pro Beta","Sapiens AI","sg",0,"2026-08-26",35.2,1],["Apodex 1.1","Apodex","us",0,"2026-08-30",26.4,0],["Claude Fable 5.1 (Low, Default Fallback)","Anthropic","us",0,"2026-09-01",46.8,0],["Claude Fable 5.1 (Medium, Default Fallback)","Anthropic","us",0,"2026-09-01",48.9,0],["Claude Fable 5.1 (Max, Default Fallback)","Anthropic","us",0,"2026-09-01",53.4,0],["Claude Fable 5.1 (Xhigh, Default Fallback)","Anthropic","us",0,"2026-09-01",53.2,0],["Claude Fable 5.1 (High, Default Fallback)","Anthropic","us",0,"2026-09-01",51.2,0],["Gemini 3.8 Flash (Medium)","Google","us",0,"2026-09-02",39.8,0],["Gemini 3.8 Flash (High)","Google","us",0,"2026-09-02",40.9,0],["Muse Spark 1.3 (Max)","Meta","us",0,"2026-09-02",48.1,0],["Qwen3.8 Max (0902)","Alibaba","cn",0,"2026-09-02",45.4,0],["Muse Spark 1.3 (Xhigh)","Meta","us",0,"2026-09-02",45.1,0],["Gemini 3.8 Flash (Low)","Google","us",0,"2026-09-02",33.5,0],["K2 Horizon 7B","Institute of Foundation Models","ae",1,"2026-09-03",20.6,0],["GPT-6 Astra (Xhigh)","OpenAI","us",0,"2026-09-03",52.4,0],["GPT-6 Astra (Max)","OpenAI","us",0,"2026-09-03",52.7,0],["K2 Horizon 3.7B","Institute of Foundation Models","ae",1,"2026-09-03",15.6,0],["K2 Horizon MoVA 36B A4B","Institute of Foundation Models","ae",1,"2026-09-03",25.3,0],["K2 Horizon 0.9B","Institute of Foundation Models","ae",1,"2026-09-03",3.0,0],["GPT-6 Astra (Low)","OpenAI","us",0,"2026-09-03",45.8,0],["K2 Horizon 375B A23B","Institute of Foundation Models","ae",1,"2026-09-03",30.5,0],["GPT-6 Astra (High)","OpenAI","us",0,"2026-09-03",50.9,0],["GPT-6 Astra (Medium)","OpenAI","us",0,"2026-09-03",49.6,0],["MiniCPM5-2B","OpenBMB","cn",1,"2026-09-07",12.5,0],["Mercury 2.5","Inception","us",0,"2026-09-08",12.3,0],["Ling-3.0-flash-VL","InclusionAI","cn",1,"2026-09-10",24.6,0],["DeepSeek V4.1 Flash (Non-reasoning)","DeepSeek","cn",1,"2026-09-10",24.7,0],["DeepSeek V4.1 Flash (Max)","DeepSeek","cn",1,"2026-09-10",39.5,0],["Ling-3.0-flash-Fin","InclusionAI","cn",1,"2026-09-11",22.6,0],["Step 5 Preview","StepFun","cn",1,"2026-09-18",43.7,0],["MiMo-V2.6-Flash","Xiaomi","cn",1,"2026-09-21",37.9,0],["Grok 4.7 (Low)","SpaceXAI","us",0,"2026-09-21",42.2,0],["MiMo-V2.6-Pro","Xiaomi","cn",1,"2026-09-21",46.3,0],["Grok 4.7 (High)","SpaceXAI","us",0,"2026-09-21",46.3,0],["Grok 4.7 (Xhigh)","SpaceXAI","us",0,"2026-09-21",46.4,0],["GPT-6 Sol (Low)","OpenAI","us",0,"2026-09-22",34.2,0],["GPT-6 Luna (Xhigh)","OpenAI","us",0,"2026-09-22",34.6,0],["Claude Opus 5.5 (Max, Default Fallback)","Anthropic","us",0,"2026-09-22",57.6,0],["GPT-6 Luna (Medium)","OpenAI","us",0,"2026-09-22",29.9,0],["Claude Opus 5.5 (Low, Default Fallback)","Anthropic","us",0,"2026-09-22",42.3,0],["GPT-6 Sol (High)","OpenAI","us",0,"2026-09-22",42.4,0],["Solar Mini 4","Upstage","kr",0,"2026-09-22",24.1,0],["GPT-6 Luna (Non-reasoning)","OpenAI","us",0,"2026-09-22",18.5,0],["GPT-6 Luna (Max)","OpenAI","us",0,"2026-09-22",38.1,0],["GPT-6 Sol (Medium)","OpenAI","us",0,"2026-09-22",39.8,0],["GPT-6 Luna (High)","OpenAI","us",0,"2026-09-22",32.9,0],["GPT-6 Luna (Low)","OpenAI","us",0,"2026-09-22",21.5,0],["GPT-6 Sol (Max)","OpenAI","us",0,"2026-09-22",47.6,0],["GPT-6 Sol (Non-reasoning)","OpenAI","us",0,"2026-09-22",28.5,0],["GPT-6 Sol (Xhigh)","OpenAI","us",0,"2026-09-22",44.2,0],["Claude Opus 5.5 (Xhigh, Default Fallback)","Anthropic","us",0,"2026-09-22",56.0,0],["Claude Opus 5.5 (Medium, Default Fallback)","Anthropic","us",0,"2026-09-22",51.2,0],["Claude Opus 5.5 (High, Default Fallback)","Anthropic","us",0,"2026-09-22",53.6,0],["Claude Sonnet 5.5 (Medium, Default Fallback)","Anthropic","us",0,"2026-09-28",40.8,0],["Claude Sonnet 5.5 (High, Default Fallback)","Anthropic","us",0,"2026-09-28",46.8,0],["Claude Sonnet 5.5 (Xhigh, Default Fallback)","Anthropic","us",0,"2026-09-28",51.9,0],["Claude Sonnet 5.5 (Max, Default Fallback)","Anthropic","us",0,"2026-09-28",56.0,0],["Claude Sonnet 5.5 (Low, Default Fallback)","Anthropic","us",0,"2026-09-28",35.9,0],["GPT-6.1 Sol (Xhigh)","OpenAI","us",0,"2026-09-29",51.0,0],["GPT-6.1 Sol (High)","OpenAI","us",0,"2026-09-29",50.2,0],["GPT-6.1 Sol (Medium)","OpenAI","us",0,"2026-09-29",47.8,0],["GPT-6.1 Sol (Max)","OpenAI","us",0,"2026-09-29",51.8,0],["GPT-6.1 Sol (Low)","OpenAI","us",0,"2026-09-29",42.1,0],["Gemini 4 Argon (High)","Google","us",0,"2026-09-30",52.6,0],["Ling 3.1 Flash","InclusionAI","cn",1,"2026-10-01",41.1,0],["Mistral Large 4 Preview","Mistral","fr",0,"2026-10-06",38.4,0],["Claude Haiku 5.5 (High)","Anthropic","us",0,"2026-10-07",37.8,0],["Claude Haiku 5.5 (Xhigh)","Anthropic","us",0,"2026-10-07",41.2,0],["Claude Haiku 5.5 (Low)","Anthropic","us",0,"2026-10-07",29.5,0],["Claude Haiku 5.5 (Max)","Anthropic","us",0,"2026-10-07",43.4,0],["Claude Haiku 5.5 (Medium)","Anthropic","us",0,"2026-10-07",34.5,0],["Muse Wonder Full (Max)","Meta","us",0,"2026-10-12",55.8,0],["Muse Wonder (Max)","Meta","us",0,"2026-10-12",52.4,0],["Muse Spark Open (Xhigh)","Meta","us",1,"2026-10-15",38.9,0],["Nemotron 3.5 Bolt 74B-A9B","NVIDIA","us",1,"2026-10-15",21.4,0],["Nemotron 3.5 Super VL","NVIDIA","us",1,"2026-10-15",26.5,0],["Beam 1.0","Reflection","us",1,"2026-10-16",30.3,0],["DeepSeek V4.1 Flash 1017 (Max)","DeepSeek","cn",1,"2026-10-17",45.1,0],["MiniMax-M3.1-Flash","MiniMax","cn",0,"2026-10-19",42.7,0],["Ling 3.1 Flash 1019","InclusionAI","cn",0,"2026-10-22",43.9,0],["Kimi K3.1 Pro","Kimi","cn",0,"2026-10-23",55.1,0]];
+const NEXT_URL = "../shrinking-frontier/";
+const T0 = Date.UTC(2023,0,1), DAY=864e5;
+const dayOf = s => Math.round((Date.parse(s+"T00:00:00Z")-T0)/DAY);
+const END = dayOf("2026-10-23"), XMAX = dayOf("2026-11-25");
+const CN = {us:"US",cn:"China",fr:"France",kr:"South Korea",ae:"UAE",il:"Israel",ca:"Canada",in:"India",ch:"Switzerland",es:"Spain",sg:"Singapore","":"—"};
+const M = RAW.map((r,i)=>({i,name:r[0],lab:r[1],cc:r[2],open:!!r[3],date:r[4],d:dayOf(r[4]),v:r[5],est:!!r[6]})).filter(m=>m.d<=END).sort((a,b)=>a.d-b.d||a.v-b.v);
+const fmtDate = d=>new Date(T0+d*DAY).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"});
+const fmtMon = d=>new Date(T0+d*DAY).toLocaleDateString("en-GB",{month:"short",year:"numeric",timeZone:"UTC"});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const B=(d,t)=>({d:dayOf(d),t});
+const MODES={
+  cty:{label:"US vs China",file:"frontier-chase-us-vs-china.gif",
+    series:[{key:"us",label:"United States",short:"US",color:"--s1",f:m=>m.cc==="us"},{key:"cn",label:"China",short:"China",color:"--s2",f:m=>m.cc==="cn"},{key:"row",label:"Rest of world",short:"Other",color:"--s3",f:m=>m.cc!=="us"&&m.cc!=="cn",minor:true}],
+    dot:m=>m.cc==="us"?"--s1":m.cc==="cn"?"--s2":"--s3", pair:["us","cn"], kA:"Best US model", kB:"Best China model",
+    beats:[
+      B("2023-01-01","Early 2023. American labs set the pace. The first Chinese models Artificial Analysis tracks arrive that autumn."),
+      B("2023-03-14","GPT-4 lands at 6.7. On today's harder index, nothing from this era scores above 10."),
+      B("2023-11-30","Alibaba's Qwen 72B trails GPT-4 Turbo by 1.6 points, on a scale where everything is still bunched near the bottom."),
+      B("2024-12-05","OpenAI's o1 starts the reasoning era. The US lead jumps to 6.7 points."),
+      B("2025-01-20","DeepSeek R1 matches o1's class six weeks later and cuts the gap to 3.8."),
+      B("2025-11-06","Kimi K2 Thinking pulls within 2.9 points of GPT-5 Codex."),
+      B("2026-03-05","GPT-5.4 jumps the frontier to 39.0. The gap reopens to 11."),
+      B("2026-06-09","Claude Fable 5 adds almost 8 points at once. The gap peaks at 19.2."),
+      B("2026-07-16","Kimi K3 claws back 13 points of the gap in five weeks."),
+      B("2026-09-22","Claude Opus 5.5 sets the record that still stands: 57.6. China's best is 46.3."),
+      B("2026-10-23","Today. Kimi K3.1 Pro scores 55.1. The gap is 2.5 points, the closest China has ever been to the top.")]},
+  lic:{label:"Open vs closed",file:"frontier-chase-open-vs-closed.gif",
+    series:[{key:"closed",label:"Proprietary",short:"Closed",color:"--s1",f:m=>!m.open},{key:"open",label:"Open weights",short:"Open",color:"--s2",f:m=>m.open}],
+    dot:m=>m.open?"--s2":"--s1", pair:["closed","open"], kA:"Best closed model", kB:"Best open model",
+    beats:[
+      B("2023-01-01","Early 2023. Closed models set the pace; Meta's Llama carries open weights."),
+      B("2023-03-14","GPT-4 lands at 6.7. On today's harder index, nothing from this era scores above 10."),
+      B("2024-07-23","Llama 3.1 405B gives open weights a model 4.6 months behind Claude 3 Opus."),
+      B("2024-12-05","o1 starts the reasoning era. The closed lead jumps to 6.7 points."),
+      B("2025-01-20","DeepSeek R1 reaches o1's level 1.5 months later. Every open record since has come from China."),
+      B("2025-11-06","Kimi K2 Thinking lands 2.9 points behind the leader, the closest open weights have come."),
+      B("2026-06-09","Claude Fable 5 jumps the frontier by 8 points. The open–closed gap peaks at 19.2."),
+      B("2026-07-16","Kimi K3 beats every closed model released before 9 June, about five weeks later."),
+      B("2026-09-22","Claude Opus 5.5 sets the high of 57.6. The best open model, MiMo-V2.6-Pro, scores 46.3."),
+      B("2026-10-23","Today the closed lead is 11.3 points, because the new Chinese leader, Kimi K3.1 Pro, ships closed. Open records now trail closed ones by about 3 months, down from 8 in 2024.")]}
+};
+function steps(f){const out=[];let best=-1;for(const m of M){if(f(m)&&m.v>best){best=m.v;if(out.length&&out[out.length-1].d===m.d)out[out.length-1]={d:m.d,v:m.v,m};else out.push({d:m.d,v:m.v,m});}}return out}
+for(const k in MODES)for(const s of MODES[k].series)s.steps=steps(s.f);
+const valAt=(st,t)=>{let r=null;for(const s of st){if(s.d<=t)r=s;else break}return r};
+const openSteps=MODES.lic.series[1].steps, closedAll=M.filter(m=>!m.open);
+const LAG=openSteps.filter(s=>s.d>=dayOf("2024-01-01")).map(s=>{const f=closedAll.find(c=>c.v>=s.v);return f?{d:s.d,lag:(s.d-f.d)/30.44,m:s.m,ref:f}:null}).filter(Boolean);
+
+let mode="cty", t=END, playing=false, speed=1, hold=0, raf=0, lastTs=0;
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const $=id=>document.getElementById(id);
+const NS="http://www.w3.org/2000/svg";
+const el=(tag,a,p)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e};
+const svg1=$("c1");
+let L={},dots=[],lines={},bandG,endG,gapG,yearTxt;
+const shortName=n=>n.replace(/\s*\((Max|Xhigh|High|Reasoning)[^)]*\)/i,"").replace(/\s*\(.*?\)/,"");
+
+function layout(){
+  const W=$("box1").clientWidth||900, narrow=W<560;
+  const H=Math.round(Math.max(320,Math.min(500,W*0.54)));
+  const m={l:28,r:narrow?96:176,t:12,b:26};
+  L={W,H,m,narrow,x:d=>m.l+(d/XMAX)*(W-m.l-m.r),y:v=>m.t+(1-v/62)*(H-m.t-m.b)};
+  svg1.setAttribute("viewBox",`0 0 ${W} ${H}`);svg1.innerHTML="";
+  const g=el("g",{class:"grid"},svg1);
+  yearTxt=el("text",{class:"yearbig",x:L.x(30),y:L.y(44),"font-size":Math.round(H*.3)},svg1);
+  for(let v=0;v<=60;v+=10){el("line",{x1:m.l,x2:W-m.r,y1:L.y(v),y2:L.y(v)},g);const tx=el("text",{x:m.l-6,y:L.y(v)+4,"text-anchor":"end"},g);tx.textContent=v}
+  for(let y=2023;y<=2026;y++){const d=dayOf(y+"-01-01");el("line",{x1:L.x(d),x2:L.x(d),y1:m.t,y2:H-m.b,"stroke-dasharray":"2 4"},g);const tx=el("text",{x:L.x(d)+4,y:H-m.b+17},g);tx.textContent=y}
+  bandG=el("g",{},svg1);
+  const dg=el("g",{},svg1);
+  dots=M.map(mm=>{const c=el("circle",{cx:L.x(mm.d),cy:L.y(mm.v),r:0},dg);c.style.fillOpacity=".58";return c});
+  const lg=el("g",{},svg1);lines={};
+  for(const k in MODES)for(const s of MODES[k].series)lines[k+s.key]=el("path",{fill:"none","stroke-width":s.minor?1.5:2.5,"stroke-linejoin":"round","stroke-linecap":"round",style:`stroke:var(${s.color});${s.minor?"stroke-opacity:.7":""}`},lg);
+  gapG=el("g",{},svg1);endG=el("g",{},svg1);
+  layoutLag();render();
+}
+function stepPath(st,t){let p="",cur=null;for(const s of st){if(s.d>t)break;p+=cur===null?`M${L.x(s.d)},${L.y(s.v)}`:`H${L.x(s.d)}V${L.y(s.v)}`;cur=s}if(cur)p+=`H${L.x(t)}`;return p}
+function bandPath(a,b,t){const start=Math.max(a[0].d,b[0].d);if(t<start)return"";const ds=[...new Set([...a,...b].map(s=>s.d))].filter(d=>d>start&&d<=t).sort((x,y)=>x-y);const pts=[start,...ds,t];let top="",back="";const segs=[];
+  for(let i=0;i<pts.length-1;i++){const d0=pts[i],d1=pts[i+1],va=valAt(a,d0).v,vb=valAt(b,d0).v;top+=(i?"L":"M")+L.x(d0)+","+L.y(va)+"L"+L.x(d1)+","+L.y(va);segs.push([d0,d1,vb])}
+  for(let i=segs.length-1;i>=0;i--){const[d0,d1,vb]=segs[i];back+="L"+L.x(d1)+","+L.y(vb)+"L"+L.x(d0)+","+L.y(vb)}return top+back+"Z"}
+
+function render(){
+  if(!L.x)return;const md=MODES[mode];let shown=0;
+  M.forEach((mm,i)=>{const c=dots[i];if(mm.d<=t){shown++;const age=t-mm.d,pop=age<20?1+1.1*(1-age/20):1;c.setAttribute("r",(L.narrow?2.5:3.1)*pop);c.style.fill=`var(${md.dot(mm)})`}else c.setAttribute("r",0)});
+  for(const k in MODES)for(const s of MODES[k].series)lines[k+s.key].setAttribute("d",k===mode?stepPath(s.steps,t):"");
+  bandG.innerHTML="";const A=md.series.find(s=>s.key===md.pair[0]),Bs=md.series.find(s=>s.key===md.pair[1]);
+  el("path",{d:bandPath(A.steps,Bs.steps,t),style:"fill:var(--band)"},bandG);
+  endG.innerHTML="";gapG.innerHTML="";
+  const xe=L.x(t);
+  const ends=md.series.map(s=>({s,cur:valAt(s.steps,t)})).filter(e=>e.cur);
+  ends.forEach(e=>e.y=L.y(e.cur.v));ends.sort((a,b)=>a.y-b.y);
+  for(let i=1;i<ends.length;i++)if(ends[i].y-ends[i-1].y<31)ends[i].y=ends[i-1].y+31;
+  ends.forEach(e=>{
+    el("circle",{cx:xe,cy:L.y(e.cur.v),r:e.s.minor?3.5:5,style:`fill:var(${e.s.color});stroke:var(--st-bg);stroke-width:2.5`},endG);
+    if(e.s.minor&&L.narrow)return;
+    const nm=el("text",{class:"endlbl",x:xe+11,y:e.y},endG);const full=shortName(e.cur.m.name);nm.textContent=L.narrow&&full.length>12?full.slice(0,11)+"…":full;
+    const vv=el("text",{class:"endval",x:xe+11,y:e.y+14},endG);vv.textContent=e.cur.v.toFixed(1)+" · "+e.s.short;
+  });
+  const ca=valAt(A.steps,t),cb=valAt(Bs.steps,t);
+  const fin=t>=END;
+  if(ca&&cb){const ya=L.y(ca.v),yb=L.y(cb.v),gx=xe-9,gap=ca.v-cb.v;
+    const st="stroke:var(--st-ink);stroke-width:1.5";
+    el("line",{x1:gx,x2:gx,y1:ya,y2:yb,style:st},gapG);el("line",{x1:gx-4,x2:gx+4,y1:ya,y2:ya,style:st},gapG);el("line",{x1:gx-4,x2:gx+4,y1:yb,y2:yb,style:st},gapG);
+    const fs=fin&&mode==="cty"?Math.round(L.H*.11):16;
+    const g=el("text",{class:"gaplbl",x:gx-10,y:Math.max(fs,(ya+yb)/2+fs*.35),"text-anchor":"end"},gapG);g.style.fontSize=fs+"px";g.textContent=gap.toFixed(1)+(fin&&mode==="cty"?" pts":"");
+    if(fin&&mode==="cty")g.style.fill="var(--s2)";}
+  yearTxt.textContent=new Date(T0+t*DAY).getUTCFullYear();
+  $("rDate").textContent=fmtMon(t);$("rCount").textContent=shown+" models scored";
+  $("rAk").textContent=md.kA;$("rBk").textContent=md.kB;
+  const put=(id,c,col)=>{$(id).textContent=c?c.v.toFixed(1):"—";$(id+"s").innerHTML=c?`<span class="sw" style="background:var(${col})"></span>`+esc(shortName(c.m.name))+" · "+esc(c.m.lab):"Not yet tracked"};
+  put("rA",ca,A.color);put("rB",cb,Bs.color);
+  $("rGap").textContent=ca&&cb?(ca.v-cb.v).toFixed(1)+" pts":"—";
+  $("rGaps").textContent=ca&&cb?(cb.v/ca.v*100).toFixed(0)+"% of the leader":"—";
+  $("gapCell").classList.toggle("final",fin&&mode==="cty");
+  let bi=-1;md.beats.forEach((b,i)=>{if(b.d<=t)bi=i});
+  if(bi>=0){$("capd").textContent=fmtDate(md.beats[bi].d);$("capt").textContent=md.beats[bi].t}
+  const f=t/END;$("fill").style.width=(f*100)+"%";$("knob").style.left=(f*100)+"%";$("scrub").value=Math.round(f*1000);
+  $("tlbl").textContent=fmtMon(t);
+  document.querySelectorAll(".beat").forEach(b=>b.classList.toggle("on",+b.dataset.d<=t));
+}
+function drawBeats(){$("beats").innerHTML=MODES[mode].beats.filter(b=>b.d>0).map(b=>`<span class="beat" data-d="${b.d}" style="left:${b.d/END*100}%"></span>`).join("")}
+function legend(){const md=MODES[mode];$("legend").innerHTML=md.series.map(s=>`<span><i style="background:var(${s.color})"></i>${s.label}, best so far</span>`).join("")+`<span><i style="height:8px;width:8px;border-radius:50%;background:var(--st-ink-3)"></i>Each dot is one model, same colors</span>`}
+
+// lag chart (theme-aware, in article)
+const svg2=$("c2");let L2={};
+function layoutLag(){const W=svg2.parentNode.clientWidth-28||760,H=Math.round(Math.max(200,Math.min(280,W*.34)));const m={l:30,r:14,t:14,b:26};const d0=dayOf("2024-01-01"),d1=END+20;
+  L2={W,H,x:d=>m.l+(d-d0)/(d1-d0)*(W-m.l-m.r),y:v=>m.t+(1-v/12)*(H-m.t-m.b)};svg2.setAttribute("viewBox",`0 0 ${W} ${H}`);svg2.innerHTML="";
+  const g=el("g",{class:"grid"},svg2);for(let v=0;v<=12;v+=3){el("line",{x1:m.l,x2:W-m.r,y1:L2.y(v),y2:L2.y(v)},g);const tx=el("text",{x:m.l-6,y:L2.y(v)+4,"text-anchor":"end"},g);tx.textContent=v}
+  for(let y=2024;y<=2026;y++){const tx=el("text",{x:L2.x(dayOf(y+"-01-01"))+4,y:H-m.b+17},g);tx.textContent=y}
+  const yrs={};LAG.forEach(l=>{const y=new Date(T0+l.d*DAY).getUTCFullYear();(yrs[y]=yrs[y]||[]).push(l.lag)});
+  for(const y in yrs){const a=yrs[y],avg=a.reduce((p,q)=>p+q,0)/a.length,x0=L2.x(dayOf(y+"-01-01")),x1=L2.x(Math.min(dayOf((+y+1)+"-01-01")-1,END));
+    el("line",{x1:x0,x2:x1,y1:L2.y(avg),y2:L2.y(avg),style:"stroke:var(--ink-2);stroke-width:1.5;stroke-dasharray:5 3"},svg2);
+    const last=+y===2026,tx=el("text",{x:last?x1:x0+4,y:L2.y(avg)-7,"text-anchor":last?"end":"start",class:"halo",style:"fill:var(--ink);font-weight:500"},svg2);tx.textContent=W<520?`${y} · ${avg.toFixed(1)} mo`:`${y} average · ${avg.toFixed(1)} months`}
+  LAG.forEach(l=>{const x=L2.x(l.d),y=L2.y(Math.min(l.lag,12));el("line",{x1:x,x2:x,y1:L2.y(0),y2:y,style:"stroke:var(--accent-o);stroke-width:2;stroke-opacity:.4"},svg2);
+    const c=el("circle",{cx:x,cy:y,r:4.5,style:"fill:var(--accent-o);stroke:var(--paper);stroke-width:2"},svg2);const ti=el("title",{},c);ti.textContent=`${l.m.name}, ${fmtDate(l.d)}: ${l.lag.toFixed(1)} months after ${l.ref.name}`});
+}
+
+// playback
+const rate=d=>d<dayOf("2024-10-01")?80:d<dayOf("2025-10-01")?36:24;
+const HOLD=1.7;
+function advance(dt){if(hold>0){hold-=dt;return}const prev=t;t=Math.min(END,t+rate(t)*dt);const b=MODES[mode].beats.find(b=>b.d>prev&&b.d<=t);if(b){t=b.d;hold=HOLD}}
+function tick(ts){if(!playing)return;const dt=lastTs?Math.min(.05,(ts-lastTs)/1000):0;lastTs=ts;advance(dt*speed);render();if(t>=END){playing=false;setBtn();return}raf=requestAnimationFrame(tick)}
+function play(){if(t>=END)t=0;playing=true;lastTs=0;hold=0;setBtn();cancelAnimationFrame(raf);raf=requestAnimationFrame(tick)}
+function pause(){playing=false;setBtn()}
+const IC={play:'<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>',pause:'<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx="1" fill="currentColor"/><rect x="9.5" y="2.5" width="3" height="11" rx="1" fill="currentColor"/></svg>',replay:'<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 8a5 5 0 1 0 1.6-3.7"/><path d="M3 2.5v3h3"/></svg>'};
+function setBtn(){const b=$("play");const s=playing?"pause":t>=END?"replay":"play";b.innerHTML=IC[s];b.setAttribute("aria-label",playing?"Pause":t>=END?"Replay from 2023":"Play")}
+$("play").onclick=()=>playing?pause():play();
+$("scrub").addEventListener("input",e=>{pause();t=Math.round(e.target.value/1000*END);hold=0;render()});
+document.querySelectorAll("[data-sp]").forEach(b=>b.onclick=()=>{speed=+b.dataset.sp;document.querySelectorAll("[data-sp]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)))});
+function setMode(m){mode=m;$("mCty").setAttribute("aria-pressed",String(m==="cty"));$("mLic").setAttribute("aria-pressed",String(m==="lic"));legend();drawBeats();render();if(!reduce){t=0;play()}}
+$("mCty").onclick=()=>mode!=="cty"&&setMode("cty");$("mLic").onclick=()=>mode!=="lic"&&setMode("lic");
+document.addEventListener("keydown",e=>{if(e.code==="Space"&&e.target===document.body){e.preventDefault();playing?pause():play()}});
+
+// tooltip
+const tip=$("tip");
+svg1.addEventListener("pointermove",ev=>{const r=svg1.getBoundingClientRect(),sx=L.W/r.width,px=(ev.clientX-r.left)*sx,py=(ev.clientY-r.top)*sx;let best=null,bd=225;
+  M.forEach(mm=>{if(mm.d>t)return;const dx=L.x(mm.d)-px,dy=L.y(mm.v)-py,dd=dx*dx+dy*dy;if(dd<bd){bd=dd;best=mm}});
+  if(!best){tip.style.opacity=0;return}
+  tip.innerHTML=`<strong>${esc(best.name)}</strong>${esc(best.lab)} · ${CN[best.cc]||best.cc.toUpperCase()} · ${best.open?"Open weights":"Proprietary"}<br>${best.v.toFixed(1)}${best.est?" (estimated)":""} · ${fmtDate(best.d)}`;
+  tip.style.left=(L.x(best.d)/sx)+"px";tip.style.top=(L.y(best.v)/sx)+"px";tip.style.opacity=1});
+svg1.addEventListener("pointerleave",()=>tip.style.opacity=0);
+
+// GIF download
+function toast(msg){const e=$("toast");e.textContent=msg;e.style.opacity=1;clearTimeout(toast.h);toast.h=setTimeout(()=>e.style.opacity=0,2600)}
+let downloads=null;
+$("gif").onclick=async()=>{
+  const md=MODES[mode];
+  if(!downloads){toast("Downloads aren't available in this view");return}
+  try{$("gif").disabled=true;const res=await fetch("gif/"+md.file);if(!res.ok)throw new Error("fetch");const blob=await res.blob();
+    await downloads.save({filename:md.file,data:blob});toast("GIF saved")}
+  catch(e){const c=e&&e.code;if(c==="declined"){}else if(c==="rate_limited")toast("A download prompt is already open");else toast("Couldn't download the GIF here")}
+  finally{$("gif").disabled=false}};
+(async()=>{try{downloads=window.claude&&window.claude.use?await window.claude.use("downloads"):null}catch(e){downloads=null}
+  if(!downloads){$("gif").hidden=true;$("gifnote").textContent="GIF downloads open in claude.ai"}})();
+
+// table
+(function(){const s=MODES.lic.series;const all=[...s[0].steps.map(x=>x.m),...s[1].steps.map(x=>x.m)].sort((a,b)=>a.d-b.d);
+  $("tbl").querySelector("tbody").innerHTML=all.map(m=>`<tr><td>${m.date}</td><td>${esc(m.name)}</td><td>${esc(m.lab)}</td><td>${CN[m.cc]||m.cc}</td><td>${m.open?"Open":"Proprietary"}</td><td class="n">${m.v.toFixed(1)}${m.est?"*":""}</td></tr>`).join("")})();
+if(NEXT_URL)$("nextlink").href=NEXT_URL;else $("nextlink").removeAttribute("href");
+
+// capture hooks for GIF rendering
+window.__cap={timeline(m,fps){mode=m;legend();drawBeats();const out=[];let tt=0;t=0;hold=0;const dt=1/fps;out.push(0);let guard=0;while(t<END&&guard++<5000){advance(dt);out.push(t)}for(let i=0;i<fps*3.5;i++)out.push(END);return out},
+  set(m,tt){mode=m;t=tt;render()},setMode(m){mode=m;legend();drawBeats();render()}};
+const _tl=window.__cap.timeline;window.__cap.timeline=(m,f)=>{document.getElementById("stmode").textContent=MODES[m].label+" · Intelligence Index v4.3.2";return _tl(m,f)};
+
+legend();drawBeats();
+let lastW=0;new ResizeObserver(()=>{const w=$("box1").clientWidth;if(w!==lastW){lastW=w;layout()}}).observe($("box1"));
+setBtn();
+if(!reduce&&!document.body.classList.contains("capture")&&!location.search.includes("capture")){setTimeout(()=>{t=0;play()},900)}
+</script>
+
+</body></html>
