@@ -110,7 +110,7 @@ article ul{margin:0 0 18px;padding-left:20px}
 article li{font-size:17px;margin-bottom:8px}
 article a{color:var(--link)}
 .next{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:18px;align-items:center;background:var(--paper);border:1px solid var(--rule);border-radius:14px;padding:14px;margin-top:36px;text-decoration:none;color:inherit}
-.next img{width:100%;border-radius:8px;display:block}
+.next img{width:100%;height:auto;border-radius:8px;display:block}
 .next .eyebrow{margin-bottom:4px}
 .next strong{font-family:var(--f-display);font-size:22px;display:block;line-height:1.15}
 .next span{color:var(--ink-2);font-size:14.5px}
@@ -173,7 +173,6 @@ body.capture .stage{border-radius:0;box-shadow:none}
   </section>
 
   <article>
-    <figure class="cover"><img src="plate-1.jpg" alt="Engraved-style plate of two rising staircases, blue for the United States and vermilion for China, ending 2.5 points apart" width="2000" height="1125"><figcaption>Plate I. Each mark is one scored model; the two staircases are the best-so-far score for each country.</figcaption></figure>
     <div class="col">
       <div class="eyebrow">By Nabeel · Analysis · 23 October 2026</div>
       <h2 style="margin-top:8px;font-size:clamp(30px,5vw,44px)">Two and a half points</h2>
@@ -187,6 +186,9 @@ body.capture .stage{border-radius:0;box-shadow:none}
 
       <h2>Three years on one scale</h2>
       <p>Artificial Analysis rescores old models whenever it changes its index, so every model in this dataset sits on the same scale. That scale is hard. Version 4.3, introduced in September, weights agentic work at 30 percent and draws on tests such as Terminal-Bench 4.0, AutomationBench and Humanity's Last Exam. On it, GPT-4 scores 6.7.</p>
+    </div>
+    <figure class="cover"><img src="plate-1.jpg" alt="Engraved-style plate of two rising staircases, blue for the United States and vermilion for China, ending 2.5 points apart" width="2000" height="1125"><figcaption>Plate I. Each mark is one scored model; the two staircases are the best-so-far score for each country.</figcaption></figure>
+    <div class="col">
       <p>The shape that comes out is a staircase that climbs slowly, then fast. From GPT-4 in March 2023 to o1 in December 2024, the frontier rose from 6.7 to 15.2. In the 22 months since, it has climbed to 57.6, nearly four times as high. Most of the climb has come in 2026, with eight new frontier records this year alone.</p>
 
       <h2>The race between countries</h2>
